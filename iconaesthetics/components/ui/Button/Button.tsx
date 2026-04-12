@@ -1,4 +1,4 @@
-type Variant = 'primary' | 'secondary' | 'outline';
+type Variant = 'primary' | 'secondary' | 'outline' | 'outlineDark';
 
 type Props = {
   label: React.ReactNode;
@@ -13,12 +13,13 @@ export default function PrimaryButton({
   onClick,
   disabled = false,
 }: Props) {
-  const baseStyles = 'font-[200] border-[.5px] transition-all duration-200 px-6 py-2';
+  const baseStyles = 'text-sm font-[200] border-[.5px] transition-all duration-200 px-6 py-3 cursor-pointer';
 
   const variants = {
-    primary: 'bg-white text-(--secondary) hover:opacity-90',
-    secondary: 'bg-secondary text-white hover:opacity-90',
-    outline: 'border border-accent text-accent hover:bg-accent hover:text-white',
+    primary: 'bg-white text-(--secondary) border-white hover:bg-(--secondary) hover:text-white hover:border-(--secondary)',
+    secondary: 'bg-(--secondary) text-white border-(--secondary) hover:opacity-90',
+    outline: 'border border-white text-white hover:text-white hover:bg-(--secondary)',
+    outlineDark: 'border border-(--secondary) text-(--secondary) hover:bg-white hover:text-white',
   };
 
   return (
@@ -27,7 +28,7 @@ export default function PrimaryButton({
       disabled={disabled}
       className={`${baseStyles} ${variants[variant]} ${
         disabled ? 'opacity-50 cursor-not-allowed' : ''
-      }`}
+      } mr-2`}
     >
       {label}
     </button>

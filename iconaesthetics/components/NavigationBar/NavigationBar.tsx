@@ -31,7 +31,7 @@ const NavigationBar = () => {
           <button className="text-(--secondary) border-[0.5px] border-(--secondary) mr-3 px-4 py-3">
             +1 (555) 123-4567
           </button>
-          <button className="bg-(--secondary) text-white border px-4 py-3">
+          <button className="bg-(--secondary) text-white border-(--secondary) border px-4 py-3">
             Book Now
           </button>
         </div>
