@@ -16,9 +16,9 @@ export default function PrimaryButton({
   const baseStyles = 'text-sm font-[200] border-[.5px] transition-all duration-200 px-6 py-3 cursor-pointer';
 
   const variants = {
-    primary: 'bg-white text-(--secondary) border-white hover:bg-(--secondary) hover:text-white hover:border-(--secondary)',
+    primary: 'bg-white text-(--secondary) border-white hover:bg-transparent hover:text-white',
     secondary: 'bg-(--secondary) text-white border-(--secondary) hover:opacity-90',
-    outline: 'border border-white text-white hover:text-white hover:bg-(--secondary)',
+    outline: 'border border-white text-white hover:text-(--secondary) hover:bg-white',
     outlineDark: 'border border-(--secondary) text-(--secondary) hover:bg-white hover:text-white',
   };
 
