@@ -5,9 +5,11 @@ type Props = {
   variant?: Variant;
   onClick?: () => void;
   disabled?: boolean;
+  className?: string;
 };
 
 export default function PrimaryButton({
+  className,
   label,
   variant = 'primary',
   onClick,
@@ -26,7 +28,7 @@ export default function PrimaryButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`${baseStyles} ${variants[variant]} ${
+      className={`${className} ${baseStyles} ${variants[variant]} ${
         disabled ? 'opacity-50 cursor-not-allowed' : ''
       } mr-2`}
     >
