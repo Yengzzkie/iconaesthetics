@@ -11,22 +11,22 @@ const NavigationBar = () => {
         <div className="flex items-center w-full mx-auto">
           <div className="flex items-center text-[14px] gap-x-6">
             {/* location */}
-            <div className="flex items-center">
-              <FaLocationDot className="text-(--secondary) h-3 mr-1.5" />
+            <div className="flex items-center gap-x-1.5">
+              <FaLocationDot className="text-(--secondary) h-3" />
               <p className="text-(--accent)">
                 123 Serenity Avenue, NY 10001, USA
               </p>
             </div>
             {/* phone */}
-            <div className="flex items-center">
-              <FaPhone className="text-(--secondary) h-3 mr-1.5" />
+            <div className="flex items-center gap-x-1.5">
+              <FaPhone className="text-(--secondary) h-3" />
               <p className="text-(--accent)">
                 +1 (555) 123-4567
               </p>
             </div>
             {/* email */}
-            <div className="flex items-center">
-              <FaEnvelope className="text-(--secondary) h-3 mr-1.5" />
+            <div className="flex items-center gap-x-1.5">
+              <FaEnvelope className="text-(--secondary) h-3" />
               <p className="text-(--accent)">
                 info@serenity.com
               </p>
