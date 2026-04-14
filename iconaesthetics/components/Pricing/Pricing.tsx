@@ -1,6 +1,4 @@
 import { Italiana } from "next/font/google";
-import { FaCheck } from "react-icons/fa";
-import PrimaryButton from "../ui/Button/Button";
 import PriceCard from "../ui/PriceCard/PriceCard";
 
 const italiana = Italiana({ subsets: ["latin"], weight: "400" });

@@ -3,6 +3,7 @@ import NavigationBar from "@/components/NavigationBar/NavigationBar";
 import About from "@/components/About/About";
 import ServicesOffered from "@/components/ServicesOffered/ServicesOffered";
 import Pricing from "@/components/Pricing/Pricing";
+import FrequentlyAskedQuestions from "@/components/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <ServicesOffered />
       <Pricing />
+      <FrequentlyAskedQuestions />
     </div>
   );
 }
