@@ -1,4 +1,5 @@
 import { Italiana } from "next/font/google";
+import services from "@/data/services.json";
 import PriceCard from "../ui/PriceCard/PriceCard";
 
 const italiana = Italiana({ subsets: ["latin"], weight: "400" });
@@ -14,9 +15,9 @@ const Pricing = () => {
       {/* cards container */}
       <div className="flex gap-8 h-1/2">
         {/* pricing card */}
-        <PriceCard title="Essential Glow" price="$75" description="Refreshing your skin and maintaing a healthy glow with minimal downtime." />
-        <PriceCard title="Essential Glow" price="$75" description="Refreshing your skin and maintaing a healthy glow with minimal downtime." variant="dark" />
-        <PriceCard title="Essential Glow" price="$75" description="Refreshing your skin and maintaing a healthy glow with minimal downtime." /> 
+        {services.map((service: {title: string, price: string, description: string}, index: number) => (
+          <PriceCard key={index} title={service.title} price={service.price} description={service.description} variant={index % 2 === 0 ? "light" : "dark"} />
+        ))}
       </div>
     </div>
   );

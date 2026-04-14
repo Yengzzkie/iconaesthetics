@@ -20,5 +20,16 @@
       "Deep hydration",
       "Personalized care plan"
     ]
+  },
+  {
+    "title": "Advanced Radiance",
+    "price": "$45",
+    "description": "Targeted treatments for deeper skin concerns and long-lasting results.",
+    "features": [
+      "Anti-aging solutions",
+      "Collagen stimulation",
+      "Deep hydration",
+      "Personalized care plan"
+    ]
   }
 ]

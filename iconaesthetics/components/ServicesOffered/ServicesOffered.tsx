@@ -43,7 +43,7 @@ const ServicesOffered = () => {
 
           <div className="aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] border-r">
             <Image src="/Cosmetic-Surgery.png" alt="" width={100} height={100} />
-            <h1 className="mt-4">COSTMETIC SURGERY</h1>
+            <h1 className="mt-4">COSMETIC SURGERY</h1>
             <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">From rhinoplasty to facelifts, our certified surgeons provide safe, transformative results.</p>
           </div>
 
