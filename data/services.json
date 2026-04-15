@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Essential Glow",
+    "price": "$75",
+    "description": "Refreshing your skin and maintaining a healthy glow with minimal downtime.",
+    "features": [
+      "Facial rejuvenation treatments",
+      "Hydration boost therapy",
+      "Skin tone enhancement",
+      "Quick recovery time"
+    ]
+  },
+  {
+    "title": "Advanced Radiance",
+    "price": "$120",
+    "description": "Targeted treatments for deeper skin concerns and long-lasting results.",
+    "features": [
+      "Anti-aging solutions",
+      "Collagen stimulation",
+      "Deep hydration",
+      "Personalized care plan"
+    ]
+  },
+  {
+    "title": "Advanced Radiance",
+    "price": "$45",
+    "description": "Targeted treatments for deeper skin concerns and long-lasting results.",
+    "features": [
+      "Anti-aging solutions",
+      "Collagen stimulation",
+      "Deep hydration",
+      "Personalized care plan"
+    ]
+  }
+]
