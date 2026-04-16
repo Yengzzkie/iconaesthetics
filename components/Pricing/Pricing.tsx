@@ -6,7 +6,7 @@ const italiana = Italiana({ subsets: ["latin"], weight: "400" });
 
 const Pricing = () => {
   return (
-    <div className="flex flex-col items-center p-20">
+    <div id="pricing" className="flex flex-col items-center p-20">
       <div className={`${italiana.className} text-4xl text-center mb-10`}>
         <h1>Transparent Pricing</h1>
         <h1>Premium Results</h1>

@@ -11,24 +11,24 @@ const NavigationBar = () => {
         <div className="flex items-center w-full mx-auto">
           <div className="flex items-center text-[14px] gap-x-6">
             {/* location */}
-            <div className="flex items-center gap-x-1.5">
+            <div className="flex items-center gap-x-1.5 hover:-translate-y-1 transition-transform duration-200">
               <FaLocationDot className="text-(--secondary) h-3" />
               <p className="text-(--accent)">
-                123 Serenity Avenue, NY 10001, USA
+                <a href="https://maps.app.goo.gl/CeVorwtfCnNUTewH7" target="_blank" rel="noopener noreferrer">43 Gladstone Ave, Oshawa, ON L1J4E4</a>
               </p>
             </div>
             {/* phone */}
-            <div className="flex items-center gap-x-1.5">
+            <div className="flex items-center gap-x-1.5 hover:-translate-y-1 transition-transform duration-200">
               <FaPhone className="text-(--secondary) h-3" />
               <p className="text-(--accent)">
-                +1 (555) 123-4567
+                <a href="tel:+15551234567">+1 (555) 123-4567</a>
               </p>
             </div>
             {/* email */}
-            <div className="flex items-center gap-x-1.5">
+            <div className="flex items-center gap-x-1.5 hover:-translate-y-1 transition-transform duration-200">
               <FaEnvelope className="text-(--secondary) h-3" />
               <p className="text-(--accent)">
-                info@serenity.com
+                <a href="mailto:info@serenity.com">info@serenity.com</a>
               </p>
             </div>
           </div>
@@ -45,14 +45,14 @@ const NavigationBar = () => {
       <div className="flex items-center justify-between h-auto w-full px-36 py-6">
         {/* logo */}
         <div className="flex items-center text-[14px] ml-4">
-          <h1 className={`${italiana.className} text-(--secondary) text-2xl font-bold`}>Icon Aesthetics</h1>
+          <h1 className={`${italiana.className} text-(--secondary) text-2xl font-bold`}><a href="#home">Icon Aesthetics</a></h1>
         </div>
         {/* CTA buttons */}
         <div className="flex items-center text-[14px] ml-auto mr-4">
-          <button className="text-(--secondary) border-[0.5px] border-(--secondary) mr-3 px-4 py-3">
-            +1 (555) 123-4567
+          <button className="text-(--secondary) border-[0.5px] border-(--secondary) hover:bg-(--secondary) hover:text-white transition-all duration-200 mr-3 px-4 py-3 cursor-pointer">
+            <a href="tel:+15551234567">+1 (555) 123-4567</a>
           </button>
-          <button className="bg-(--secondary) text-white border-(--secondary) border px-4 py-3">
+          <button className="bg-(--secondary) text-white border-(--secondary) hover:bg-white hover:text-(--secondary) transition-all duration-200 border px-4 py-3 cursor-pointer">
             Book Now
           </button>
         </div>
@@ -62,13 +62,25 @@ const NavigationBar = () => {
       <div className="flex items-center bg-(--secondary) text-white h-5 w-full px-36 py-6">
         <div className="flex items-center w-full mx-auto">
           <div className="flex items-center text-[14px]">
-            <p className="m-4">123 Serenity Avenue, NY 10001, USA</p>
-            <p className="m-4">+1 (555) 123-4567</p>
-            <p className="m-4">info@serenity.com</p>
+            <div className="hover:bg-white hover:text-(--secondary) transition-all duration-200">
+              <p className="m-4"><a href="#home">Home</a></p>
+            </div>
+            <div className="hover:bg-white hover:text-(--secondary) transition-all duration-200">
+              <p className="m-4"><a href="#about">About Us</a></p>
+            </div>
+            <div className="hover:bg-white hover:text-(--secondary) transition-all duration-200">
+              <p className="m-4"><a href="#services">Services</a></p>
+            </div>
+            <div className="hover:bg-white hover:text-(--secondary) transition-all duration-200">
+              <p className="m-4"><a href="#pricing">Pricing</a></p>
+            </div>
+            <div className="hover:bg-white hover:text-(--secondary) transition-all duration-200">
+              <p className="m-4"><a href="#faq">FAQ</a></p>
+            </div>
           </div>
           {/* social media icons */}
           <div className="flex items-center ml-auto text-[14px]">
-            <p className="m-4">Facebook</p>
+            <p className="m-4"><a href="#services">Facebook</a></p>
             <p className="m-4">Twitter</p>
             <p className="m-4">Instagram</p>
           </div>

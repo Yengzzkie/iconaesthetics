@@ -7,7 +7,7 @@ const italiana = Italiana({ subsets: ["latin"], weight: "400" });
 
 const FrequentlyAskedQuestions = () => {
   return (
-    <div className="bg-(--primary) px-32">
+    <div id="faq" className="bg-(--primary) px-32">
       <div className="flex items-start p-20 mx-auto">
         <div className="flex flex-col">
           <div className={`${italiana.className} text-4xl mb-10`}>
