@@ -7,14 +7,14 @@ const italiana = Italiana({ subsets: ["latin"], weight: "400" });
 
 const FrequentlyAskedQuestions = () => {
   return (
-    <div id="faq" className="bg-(--primary) px-32">
-      <div className="flex items-start p-20 mx-auto">
-        <div className="flex flex-col">
+    <div id="faq" className="bg-(--primary) px-8 py-12 lg:px-32 lg:py-0">
+      <div className="flex flex-col lg:flex-row items-start lg:p-20 mx-auto">
+        <div className="flex flex-col mb-4">
           <div className={`${italiana.className} text-4xl mb-10`}>
             <h1>Have Questions?</h1>
             <h1>We&apos;re Here to Help</h1>
           </div>
-          <div className="flex flex-col gap-4 font-thin w-3/4 h-1/2">
+          <div className="flex flex-col gap-4 font-thin lg:w-3/4 h-1/2">
             <p>
               At Beautiva, informed decisions lead to better results. We’ve
               gathered answers to common questions about our services and care
@@ -26,7 +26,7 @@ const FrequentlyAskedQuestions = () => {
             </p>
           </div>
 
-          <PrimaryButton label="GET IN TOUCH" variant="secondary" className="self-start mt-6" />
+          <PrimaryButton label="GET IN TOUCH" variant="secondary" className="self-start mt-6 w-full lg:w-fit" />
         </div>
 
         <div>
