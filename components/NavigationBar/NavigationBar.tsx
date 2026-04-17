@@ -7,7 +7,7 @@ const NavigationBar = () => {
   return (
     <div className="flex flex-col flex-1 items-center justify-center">
       {/* address and social media icons */}
-      <div className="flex items-center bg-(--primary) h-5 w-full px-36 py-6">
+      <div className="hidden lg:flex items-center bg-(--primary) h-5 w-full px-36 py-6">
         <div className="flex items-center w-full mx-auto">
           <div className="flex items-center text-[14px] gap-x-6">
             {/* location */}
@@ -42,7 +42,7 @@ const NavigationBar = () => {
       </div>
 
       {/* logo and CTA buttons */}
-      <div className="flex items-center justify-between h-auto w-full px-36 py-6">
+      <div className="flex items-center justify-between h-auto w-full lg:px-36 py-6">
         {/* logo */}
         <div className="flex items-center text-[14px] ml-4">
           <h1 className={`${italiana.className} text-(--secondary) text-2xl font-bold`}><a href="#home">Icon Aesthetics</a></h1>
@@ -59,7 +59,7 @@ const NavigationBar = () => {
       </div>
 
       {/* navigation */}
-      <div className="flex items-center bg-(--secondary) text-white h-5 w-full px-36 py-6">
+      <div className="hidden lg:flex items-center bg-(--secondary) text-white h-5 w-full px-36 py-6">
         <div className="flex items-center w-full mx-auto">
           <div className="flex items-center text-[14px]">
             <div className="hover:bg-white hover:text-(--secondary) transition-all duration-200">
