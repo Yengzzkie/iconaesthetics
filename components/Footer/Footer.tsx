@@ -17,21 +17,21 @@ const Footer = () => {
             Personalized aesthetic treatments led by certified experts. Look and
             feel your best—with confidence.
           </p>
-          <div className="flex flex-col gap-y-2">
+          <div className="flex flex-col gap-y-2 font-thin">
             {/* location */}
             <div className="flex items-center gap-x-1.5 hover:-translate-y-0.5 transition-transform duration-200">
               <FaLocationDot className="h-3" />
-              <p>123 Serenity Avenue, NY 10001, USA</p>
+              <p><a href="https://maps.app.goo.gl/CeVorwtfCnNUTewH7" target="_blank" rel="noopener noreferrer">123 Serenity Avenue, NY 10001, USA</a></p>
             </div>
             {/* phone */}
             <div className="flex items-center gap-x-1.5 hover:-translate-y-0.5 transition-transform duration-200">
               <FaPhone className="h-3" />
-              <p>+1 (555) 123-4567</p>
+              <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
             </div>
             {/* email */}
             <div className="flex items-center gap-x-1.5 hover:-translate-y-0.5 transition-transform duration-200">
               <FaEnvelope className="h-3" />
-              <p>info@serenity.com</p>
+              <p><a href="mailto:info@serenity.com">info@serenity.com</a></p>
             </div>
           </div>
         </div>
@@ -65,8 +65,8 @@ const Footer = () => {
       </div>
 
       {/* CREDITS */}
-      <div className="flex justify-between py-4 border-t border-[#d7d7d771] mt-4">
-        <p>SEO and design by Manuel Gatchalian</p>
+      <div className="flex flex-col lg:flex-row text-center gap-1 justify-between py-4 border-t border-[#d7d7d771] mt-4 font-thin text-sm">
+        <p>SEO and design by <a className="font-bold" href="https://manuel-gatchalian.com/" target="_blank">Manuel Gatchalian</a></p>
         <p>Copyright © 2025 All rights reserved.</p>
       </div>
     </div>
