@@ -6,12 +6,12 @@ const italiana = Italiana({ subsets: ["latin"], weight: "400" });
 
 const Footer = () => {
   return (
-    <div className="bg-(--secondary) text-white pt-8 pb-2 px-24">
-      <div className="flex">
+    <div className="bg-(--secondary) text-white pt-8 pb-2 px-6 lg:px-24">
+      <div className="flex flex-col lg:flex-row gap-y-8 lg:gap-y-0">
         {/* LOGO AND INFO */}
         <div className="flex flex-col flex-2 gap-y-4">
           <h1 className={`${italiana.className} text-4xl font-bold`}>
-            Icon Aesthetics
+            <a href="#home">Icon Aesthetics</a>
           </h1>
           <p className="font-thin max-w-2/3">
             Personalized aesthetic treatments led by certified experts. Look and
