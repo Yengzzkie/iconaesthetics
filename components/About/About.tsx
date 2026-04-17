@@ -7,24 +7,24 @@ const inter = Inter({ subsets: ["latin"], weight: "300" });
 
 const About = () => {
   return (
-    <div className="relative flex items-center justify-center gap-x-12 py-32">
+    <div className="relative flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-x-12 p-8 lg:py-32">
       {/* IMAGE */}
       <div className="flex-1 relative flex justify-center">
         {/* background box */}
-        <div className="w-full h-full bg-(--primary) py-12">
+        <div className="w-full h-full bg-(--primary) lg:py-12 py-8 px-16">
           {/* image */}
           <Image
             src="/Happy-young-black-woman-getting-ready-before-plastic-surgery-session.png"
             alt=""
             width={500}
             height={500}
-            className="relative z-10 w-full h-auto -right-12.5"
+            className="relative z-10 w-full h-auto lg:-right-12.5"
           />
         </div>
       </div>
 
       {/* TEXT */}
-      <div className="flex flex-col gap-4 flex-1 px-16">
+      <div className="flex flex-col gap-4 flex-1 px-4 lg:px-16">
         <h1 className={`${italiana.className} text-4xl`}>
           Why Choose Icon Aesthetics
         </h1>
@@ -36,7 +36,7 @@ const About = () => {
           safely and confidently.
         </p>
 
-        <div className="mt-2">
+        <div className="flex flex-col mt-2 w-full gap-2">
           <PrimaryButton label="ABOUT US" variant="secondary" />
           <PrimaryButton label="OUR SERVICES" variant="outlineDark" />
         </div>
