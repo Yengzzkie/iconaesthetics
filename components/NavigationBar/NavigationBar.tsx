@@ -1,3 +1,5 @@
+"use client";
+
 import { FaInstagram, FaFacebook, FaTiktok, FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 import { Italiana } from "next/font/google";
 

@@ -1,3 +1,5 @@
+"use client";
+
 import { Italiana } from "next/font/google";
 import PrimaryButton from "../ui/Button/Button";
 
@@ -16,7 +18,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[linear-gradient(264.69deg,#3F332C00_22.94%,#3F332CE6_95.59%)]" />
 
       {/* Content */}
-      <div className="relative z-10 w-3/4 lg:w-1/3 ml-8 lg:ml-32">
+      <div className="relative z-10 w-3/4 md:w-1/2 lg:w-1/3 ml-8 lg:ml-32">
         <h1 className={`${italiana.className} text-4xl lg:text-6xl`}>
           Reveal Your Natural Beauty
         </h1>
@@ -26,8 +28,8 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col lg:flex-row gap-2">
-          <PrimaryButton className="w-full" label="BOOK NOW" variant="primary" />
-          <PrimaryButton className="w-full" label="EXPLORE OUR SERVICES" variant="outline" />
+          <PrimaryButton className="lg:w-full" label="BOOK NOW" variant="primary" />
+          <PrimaryButton className="lg:w-full" label="EXPLORE OUR SERVICES" variant="outline" />
         </div>
       </div>
     </div>

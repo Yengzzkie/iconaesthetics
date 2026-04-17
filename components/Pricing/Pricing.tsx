@@ -1,3 +1,5 @@
+"use client";
+
 import { Italiana } from "next/font/google";
 import services from "@/data/services.json";
 import PriceCard from "../ui/PriceCard/PriceCard";
