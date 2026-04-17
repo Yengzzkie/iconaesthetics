@@ -59,7 +59,7 @@ const PriceCard = ({
           </div>
           <div className="flex items-center gap-2">
             <FaCheck />
-            <p>Facial Rejuvenation treatments, Facial Rejuvenation treatments</p>
+            <p>Facial Rejuvenation treatments</p>
           </div>
         </div>
 
