@@ -1,9 +1,7 @@
 "use client";
 
 import { FaInstagram, FaFacebook, FaTiktok, FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
-import { Italiana } from "next/font/google";
-
-const italiana = Italiana({ subsets: ["latin"], weight: "400" });
+import Logo from "@/components/ui/Logo/Logo";
 
 const NavigationBar = () => {
   return (
@@ -46,9 +44,7 @@ const NavigationBar = () => {
       {/* logo and CTA buttons */}
       <div className="flex items-center justify-between h-auto w-full lg:px-36 py-6">
         {/* logo */}
-        <div className="flex items-center text-[14px] ml-4">
-          <h1 className={`${italiana.className} text-(--secondary) text-2xl font-bold`}><a href="#home">Icon Aesthetics</a></h1>
-        </div>
+        <Logo dark />
         {/* CTA buttons */}
         <div className="flex items-center text-[14px] ml-auto mr-4">
           <button className="text-(--secondary) border-[0.5px] border-(--secondary) hover:bg-(--secondary) hover:text-white transition-all duration-200 mr-3 px-4 py-3 cursor-pointer">

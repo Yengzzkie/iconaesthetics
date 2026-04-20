@@ -1,8 +1,6 @@
 import { FaLocationDot, FaPhone, FaEnvelope, FaInstagram, FaFacebook, FaTiktok, } from "react-icons/fa6";
-import { Italiana } from "next/font/google";
 import InputField from "../ui/InputField/InputField";
-
-const italiana = Italiana({ subsets: ["latin"], weight: "400" });
+import Logo from "@/components/ui/Logo/Logo";
 
 const Footer = () => {
   return (
@@ -10,9 +8,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row gap-y-8 lg:gap-y-0">
         {/* LOGO AND INFO */}
         <div className="flex flex-col flex-2 gap-y-4">
-          <h1 className={`${italiana.className} text-4xl font-bold`}>
-            <a href="#home">Icon Aesthetics</a>
-          </h1>
+          <Logo light />
           <p className="font-thin max-w-2/3">
             Personalized aesthetic treatments led by certified experts. Look and
             feel your best—with confidence.
