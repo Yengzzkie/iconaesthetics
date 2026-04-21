@@ -26,14 +26,13 @@ const About = () => {
       {/* TEXT */}
       <div className="flex flex-col gap-4 flex-1 px-2 lg:px-16">
         <h1 className={`${italiana.className} text-4xl`}>
-          Why Choose Icon Aesthetics
+          Why Choose Icon Esthetics
         </h1>
 
         <p className={`${inter.className}`}>
-          At Beautiva, we blend advanced medical aesthetics with compassionate
-          care. From subtle enhancements to transformative procedures, our
-          board-certified team is here to help you achieve your beauty goals
-          safely and confidently.
+          At Icon Esthetics, we combine advanced medical aesthetics with personalized care. 
+          From subtle enhancements to transformative treatments, our certified team focuses on 
+          safe, natural-looking results tailored to your unique goals.
         </p>
 
         <div className="flex flex-col mt-2 w-full gap-2">

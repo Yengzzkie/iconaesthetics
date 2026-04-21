@@ -42,15 +42,15 @@ const NavigationBar = () => {
       </div>
 
       {/* logo and CTA buttons */}
-      <div className="flex items-center justify-between h-auto w-full lg:px-36 py-6">
+      <div className="flex items-center justify-between h-auto w-full px-2 lg:px-36 py-6">
         {/* logo */}
         <Logo />
         {/* CTA buttons */}
-        <div className="flex items-center text-[14px] ml-auto mr-4">
-          <button className="text-(--secondary) border-[0.5px] border-(--secondary) hover:bg-(--secondary) hover:text-white transition-all duration-200 mr-3 px-4 py-3 cursor-pointer">
+        <div className="flex flex-col lg:flex-row gap-1 lg:gap-3 items-center text-[14px] ml-auto lg:mr-4">
+          <button className="text-(--secondary) text-xs lg:text-sm border-[0.5px] border-(--secondary) hover:bg-(--secondary) hover:text-white transition-all duration-200 px-2 lg:px-4 py-1 lg:py-3 cursor-pointer">
             <a href="tel:+19055798088">+1 (905) 579-8088</a>
           </button>
-          <button className="bg-(--secondary) text-white border-(--secondary) hover:bg-white hover:text-(--secondary) transition-all duration-200 border px-4 py-3 cursor-pointer">
+          <button className="bg-(--secondary) text-xs lg:text-sm text-white border-(--secondary) hover:bg-white hover:text-(--secondary) transition-all duration-200 border px-2 lg:px-4 py-1 lg:py-3 w-full lg:w-fit cursor-pointer">
             Book Now
           </button>
         </div>
