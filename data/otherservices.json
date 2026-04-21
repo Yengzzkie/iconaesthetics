@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Lash Extensions (CLASSIC)",
+        "price": "110"
+    },
+    {
+        "name": "Lash Extensions (HYBRID)",
+        "price": "135"
+    },
+    {
+        "name": "Lash Extensions (VOLUME)",
+        "price": "155"
+    },
+    {
+        "name": "Keratin Lash Lift & Tint (45-60 min)",
+        "price": "85"
+    },
+    {
+        "name": "Skin Tag (per part)",
+        "price": "100"
+    },
+    {
+        "name": "Skin Tag (2 parts)",
+        "price": "150"
+    },
+    {
+        "name": "Skin Tag (Face + unlimited)",
+        "price": "250"
+    },
+    {
+        "name": "Brow Lamination (Free Tint)",
+        "price": "79"
+    },
+    {
+        "name": "Foot Massage (45 min)",
+        "price": "45"
+    }
+]

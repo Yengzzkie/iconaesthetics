@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], weight: "300" });
 
 const About = () => {
   return (
-    <div className="relative flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-x-12 p-4 lg:py-32">
+    <div id="about" className="relative flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-x-12 p-4 lg:py-32">
       {/* IMAGE */}
       <div className="flex-1 relative flex justify-center">
         {/* background box */}

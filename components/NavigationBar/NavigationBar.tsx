@@ -14,21 +14,21 @@ const NavigationBar = () => {
             <div className="flex items-center gap-x-1.5 hover:-translate-y-1 transition-transform duration-200">
               <FaLocationDot className="text-(--secondary) h-3" />
               <p className="text-(--accent)">
-                <a href="https://maps.app.goo.gl/CeVorwtfCnNUTewH7" target="_blank" rel="noopener noreferrer">43 Gladstone Ave, Oshawa, ON L1J4E4</a>
+                <a href="https://maps.app.goo.gl/CeVorwtfCnNUTewH7" target="_blank" rel="noopener noreferrer">43 Gladstone Ave, Oshawa, ON L1J 4E4 (Upper Level)</a>
               </p>
             </div>
             {/* phone */}
             <div className="flex items-center gap-x-1.5 hover:-translate-y-1 transition-transform duration-200">
               <FaPhone className="text-(--secondary) h-3" />
               <p className="text-(--accent)">
-                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                <a href="tel:+19055798088">+1 (905) 579-8088</a>
               </p>
             </div>
             {/* email */}
             <div className="flex items-center gap-x-1.5 hover:-translate-y-1 transition-transform duration-200">
               <FaEnvelope className="text-(--secondary) h-3" />
               <p className="text-(--accent)">
-                <a href="mailto:info@serenity.com">info@serenity.com</a>
+                <a href="mailto:estheticsicon@gmail.com">estheticsicon@gmail.com</a>
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@ const NavigationBar = () => {
         {/* CTA buttons */}
         <div className="flex items-center text-[14px] ml-auto mr-4">
           <button className="text-(--secondary) border-[0.5px] border-(--secondary) hover:bg-(--secondary) hover:text-white transition-all duration-200 mr-3 px-4 py-3 cursor-pointer">
-            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+            <a href="tel:+19055798088">+1 (905) 579-8088</a>
           </button>
           <button className="bg-(--secondary) text-white border-(--secondary) hover:bg-white hover:text-(--secondary) transition-all duration-200 border px-4 py-3 cursor-pointer">
             Book Now
@@ -77,11 +77,11 @@ const NavigationBar = () => {
             </div>
           </div>
           {/* social media icons */}
-          <div className="flex items-center ml-auto text-[14px]">
+          {/* <div className="flex items-center ml-auto text-[14px]">
             <p className="m-4"><a href="#services">Facebook</a></p>
             <p className="m-4">Twitter</p>
             <p className="m-4">Instagram</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

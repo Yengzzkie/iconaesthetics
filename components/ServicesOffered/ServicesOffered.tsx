@@ -12,46 +12,67 @@ const ServicesOffered = () => {
             Our Specialties
           </h1>
           <p className="text-center font-thin">
-            At Beautiva, we specialize in advanced aesthetic and cosmetic
-            treatments tailored to enhance your natural beauty.
+            We offer a range of beauty and aesthetic treatments designed to
+            enhance your natural features with precision and care.
           </p>
         </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:w-3/4 mx-auto mt-8 px-4 lg:px-0">
+
+          {/* Facial Rejuvenation */}
           <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] lg:border-r border-b py-6 lg:py-0">
-            <Image src="/Facial-Rejuvenation.png" alt="" width={100} height={100} />
+            <Image src="/Facial-Fillers.png" alt="facial-massage" width={100} height={100} />
             <h1 className="mt-4">FACIAL REJUVENATION</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">Reverse aging signs with personalized treatments that refresh your skin without losing your natural beauty.</p>
+            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
+              Revitalize your skin with customized treatments that improve tone, texture, and overall glow.
+            </p>
           </div>
 
+          {/* Eyelash Extensions */}
           <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] lg:border-r border-b py-6 lg:py-0">
-            <Image src="/Facial-Fillers.png" alt="" width={100} height={100} />
-            <h1 className="mt-4">BOTOX & DERMAL FILLERS</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">Achieve a youthful and vibrant look with FDA-approved injectables for natural results.</p>
+            <Image src="/eyelash.png" alt="eyelashe" width={100} height={100} className="invert" />
+            <h1 className="mt-4">EYELASH EXTENSIONS</h1>
+            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
+              Enhance your eyes with fuller, longer lashes tailored to your desired look—from natural to dramatic.
+            </p>
           </div>
 
+          {/* Haircut & Styling */}
           <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] border-b py-6 lg:py-0">
-            <Image src="/Skin-Resurfacing.png" alt="" width={100} height={100} />
-            <h1 className="mt-4">SKIN RESURFACING</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">Reveal radiant skin with non-invasive treatments targeting fine lines and acne scars.</p>
+            <Image src="/haircut.png" alt="haircut" width={100} height={100} className="invert" />
+            <h1 className="mt-4">HAIRCUT & STYLING</h1>
+            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
+              Get a fresh, modern look with professional cuts and styling suited to your face shape and lifestyle.
+            </p>
           </div>
 
+          {/* Sugaring Hair Removal */}
           <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] lg:border-r py-6 lg:py-0">
-            <Image src="/Body-Contouring.png" alt="" width={100} height={100} />
-            <h1 className="mt-4">BODY CONTOURING</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">Sculpt your silhouette with non-surgical fat reduction and skin-tightening treatments.</p>
+            <Image src="/waxing.png" alt="waxing" width={100} height={100} className="invert" />
+            <h1 className="mt-4">SUGARING HAIR REMOVAL</h1>
+            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
+              A gentle, natural hair removal method that leaves your skin smooth with less irritation than waxing.
+            </p>
           </div>
 
+          {/* Brow Tattoo / Microblading */}
           <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] border-t lg:border-t-0 lg:border-r py-6 lg:py-0">
-            <Image src="/Cosmetic-Surgery.png" alt="" width={100} height={100} />
-            <h1 className="mt-4">COSMETIC SURGERY</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">From rhinoplasty to facelifts, our certified surgeons provide safe, transformative results.</p>
+            <Image src="/tinting.png" alt="tinting" width={100} height={100} className="invert" />
+            <h1 className="mt-4">BROW TATTOO</h1>
+            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
+              Achieve fuller, perfectly shaped brows with semi-permanent techniques like microblading.
+            </p>
           </div>
 
-          <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] border-t lg:border-t-0 border-b lg:border-b-0 py-6 lg:py-0">
-            <Image src="/Medical-Team.png" alt="" width={100} height={100} />
-            <h1 className="mt-4">MEDICAL-GRADE SKINCARE</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">From rhinoplasty to facelifts, our certified surgeons provide safe, transformative results.</p>
+          {/* Skin Care Treatments */}
+          <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] border-t lg:border-t-0 py-6 lg:py-0">
+            <Image src="/facial-massage-removebg-preview.png" alt="facial-massage" width={100} height={100} className="invert" />
+            <h1 className="mt-4">SKIN CARE TREATMENTS</h1>
+            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
+              Maintain healthy, radiant skin with professional facials and targeted skin care solutions.
+            </p>
           </div>
+
         </div>
       </div>
     </div>

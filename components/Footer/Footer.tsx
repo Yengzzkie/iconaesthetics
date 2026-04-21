@@ -17,17 +17,17 @@ const Footer = () => {
             {/* location */}
             <div className="flex items-center gap-x-1.5 hover:-translate-y-0.5 transition-transform duration-200">
               <FaLocationDot className="h-3" />
-              <p><a href="https://maps.app.goo.gl/CeVorwtfCnNUTewH7" target="_blank" rel="noopener noreferrer">123 Serenity Avenue, NY 10001, USA</a></p>
+              <p><a href="https://maps.app.goo.gl/CeVorwtfCnNUTewH7" target="_blank" rel="noopener noreferrer">43 Gladstone Ave, Oshawa, ON L1J 4E4 (Upper Level)</a></p>
             </div>
             {/* phone */}
             <div className="flex items-center gap-x-1.5 hover:-translate-y-0.5 transition-transform duration-200">
               <FaPhone className="h-3" />
-              <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+              <p><a href="tel:+15551234567">+1 (905) 579-8088</a></p>
             </div>
             {/* email */}
             <div className="flex items-center gap-x-1.5 hover:-translate-y-0.5 transition-transform duration-200">
               <FaEnvelope className="h-3" />
-              <p><a href="mailto:info@serenity.com">info@serenity.com</a></p>
+              <p><a href="mailto:estheticsicon@gmail.com">estheticsicon@gmail.com</a></p>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ const Footer = () => {
       {/* CREDITS */}
       <div className="flex flex-col lg:flex-row text-center gap-1 justify-between py-4 border-t border-[#d7d7d771] mt-4 font-thin text-sm">
         <p>SEO and design by <a className="font-bold" href="https://manuel-gatchalian.com/" target="_blank">Manuel Gatchalian</a></p>
-        <p>Copyright © 2025 All rights reserved.</p>
+        <p>Copyright © {new Date().getFullYear()} All rights reserved.</p>
       </div>
     </div>
   );

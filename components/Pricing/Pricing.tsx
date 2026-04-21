@@ -7,6 +7,7 @@ import hairremovalservices from "@/data/hairremovalservices.json";
 import hairremovalmale from "@/data/hairremovalmale.json";
 import menhaircut from "@/data/menhaircut.json";
 import womenhaircut from "@/data/womenhaircut.json";
+import otherservices from "@/data/otherservices.json";
 import services from "@/data/services.json";
 import PriceCard from "../ui/PriceCard/PriceCard";
 
@@ -25,14 +26,7 @@ const Pricing = () => {
       </div>
 
       {/* cards container */}
-      <div
-        className={`${oranienbaum.className} grid grid-cols-1 lg:grid-cols-2 gap-8 h-1/2 w-full`}
-      >
-        {/* pricing card */}
-        {/* {services.map((service: {title: string, price: string, description: string}, index: number) => (
-          <PriceCard key={index} title={service.title} price={service.price} description={service.description} variant={index % 2 === 0 ? "light" : "dark"} />
-        ))} */}
-
+      <div className={`${oranienbaum.className} grid grid-cols-1 lg:grid-cols-2 gap-8 h-1/2 w-full`}>
         <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-8 overflow-hidden">
           <div className="absolute -bottom-5 rotate-12 -left-5 w-75 h-75 bg-[#846e6124] mask-[url('/Facial-Rejuvenation.png')] mask-no-repeat mask-center mask-contain" />
           <h1 className="text-4xl text-center mb-2">Facial Rejuvenation</h1>
@@ -86,7 +80,7 @@ const Pricing = () => {
         </div>
 
         <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-8 overflow-hidden">
-          <div className="absolute -bottom-5 rotate-12 -left-5 w-75 h-75 bg-[#846e6124] mask-[url('/depilation.png')] mask-no-repeat mask-center mask-contain" />
+          <div className="absolute -bottom-5 rotate-12 -left-5 w-75 h-75 bg-[#846e6124] mask-[url('/haircut.png')] mask-no-repeat mask-center mask-contain" />
           <h1 className="text-4xl text-center mb-2">Haircut</h1>
           <h1 className="font-extrabold text-xl mt-4">MEN</h1>
           {menhaircut.map((haircut, index) => (
@@ -106,7 +100,30 @@ const Pricing = () => {
             </div>
           ))}
         </div>
+
+        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-8 overflow-hidden">
+          <div className="absolute -bottom-5 rotate-12 -left-5 w-75 h-75 bg-[#846e6124] mask-[url('/aesthetics.png')] mask-no-repeat mask-center mask-contain" />
+          <h1 className="text-4xl text-center mb-2">
+            Other Services
+          </h1>
+          {otherservices.map((otherservices, index) => (
+            <div key={index} className="flex items-center font-bold">
+              <p className="whitespace-nowrap">{otherservices.name}</p>
+              <div className="flex-1 border-b-[0.5px] border-gray-400 border-dashed mx-2"></div>
+              <span className="whitespace-nowrap">${otherservices.price}.00</span>
+            </div>
+          ))}
+        </div>
       </div>
+
+      {/* <div className={`${italiana.className} text-4xl text-center mt-8 mb-5`}>
+        <h1>Other Services</h1>
+      </div>
+      <div className="flex flex-col items-center justify-center lg:flex-row gap-6 w-full">
+        {services.map((service: {title: string, price: string, description: string}, index: number) => (
+          <PriceCard key={index} title={service.title} price={service.price} description={service.description} variant={index % 2 === 0 ? "light" : "dark"} />
+        ))}
+      </div> */}
     </div>
   );
 };

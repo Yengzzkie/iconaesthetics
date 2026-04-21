@@ -16,9 +16,7 @@ const FrequentlyAskedQuestions = () => {
           </div>
           <div className="flex flex-col gap-4 font-thin lg:w-3/4 h-1/2">
             <p>
-              At Beautiva, informed decisions lead to better results. We’ve
-              gathered answers to common questions about our services and care
-              process.
+              At Icon Esthetics, we believe clarity builds confidence. Below are answers to the most common questions about our treatments and services.
             </p>
             <p>
               Still have questions? Feel free to contact our team—we’re happy to
