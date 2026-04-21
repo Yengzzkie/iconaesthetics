@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Deep Cleansing Facial (45 min.)",
+        "price": "79"
+    },
+    {
+        "name": "Microdemabrasion Facial (60 min.)",
+        "price": "99"
+    },
+    {
+        "name": "Microdemabrasion + LED (75 min.)",
+        "price": "125"
+    },
+    {
+        "name": "Korean Facial",
+        "price": " "
+    },
+    {
+        "name": "Hydra Facial (60 min.)",
+        "price": "115"
+    },
+    {
+        "name": "Hydra-brasion Facial",
+        "price": "140"
+    },
+    {
+        "name": "Hydra Facial + LED (75 min.)",
+        "price": "135"
+    },
+    {
+        "name": "Acne Treatment (60 min)",
+        "price": "100"
+    },
+    {
+        "name": "Chemical Peel (Add-on - must be combined w/ facial",
+        "price": "45"
+    },
+    {
+        "name": "Microneedling",
+        "price": "220"
+    },
+    {
+        "name": "3 Session Microneedling Bundle",
+        "price": "620"
+    }
+]

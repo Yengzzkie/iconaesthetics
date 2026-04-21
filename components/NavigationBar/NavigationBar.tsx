@@ -44,7 +44,7 @@ const NavigationBar = () => {
       {/* logo and CTA buttons */}
       <div className="flex items-center justify-between h-auto w-full lg:px-36 py-6">
         {/* logo */}
-        <Logo dark />
+        <Logo />
         {/* CTA buttons */}
         <div className="flex items-center text-[14px] ml-auto mr-4">
           <button className="text-(--secondary) border-[0.5px] border-(--secondary) hover:bg-(--secondary) hover:text-white transition-all duration-200 mr-3 px-4 py-3 cursor-pointer">

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Buzz Cut",
+        "price": "25"
+    },
+    {
+        "name": "Hair Cut + Wash & Hot Towel Finishing w/ Scalp Massage",
+        "price": "35"
+    },
+    {
+        "name": "Hair Cut + Wash & Hot Towel Finishing w/ Scalp Massage (Senior)",
+        "price": "30"
+    },
+    {
+        "name": "Kids Cut (12 & under)",
+        "price": "25"
+    },
+    {
+        "name": "Scalp Treatment (Add-on)",
+        "price": "20"
+    },
+    {
+        "name": "Beard Trim (Add-on)",
+        "price": "15"
+    }
+]

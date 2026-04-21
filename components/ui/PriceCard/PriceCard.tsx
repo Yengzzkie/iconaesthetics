@@ -18,7 +18,6 @@ const PriceCard = ({
   title,
   price,
   description,
-  features,
   variant = "light",
   className,
 }: Props) => {

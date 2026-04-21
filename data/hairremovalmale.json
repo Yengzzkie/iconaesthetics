@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Chest & Breast",
+        "price": "48"
+    },
+    {
+        "name": "Stomach",
+        "price": "35"
+    },
+    {
+        "name": "Full Arms",
+        "price": "50"
+    },
+    {
+        "name": "Lower Arms",
+        "price": "40"
+    },
+    {
+        "name": "Underarms",
+        "price": "18"
+    },
+    {
+        "name": "Half Back",
+        "price": "38"
+    },
+    {
+        "name": "Full Back",
+        "price": "52"
+    },
+    {
+        "name": "Upper Legs",
+        "price": "45"
+    },
+    {
+        "name": "Lower Legs",
+        "price": "40"
+    },
+    {
+        "name": "Full Legs",
+        "price": "65"
+    },
+    {
+        "name": "Hands",
+        "price": "12"
+    },
+    {
+        "name": "Hands",
+        "price": "12"
+    }
+]
