@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Italiana, Inter } from "next/font/google";
 import PrimaryButton from "../ui/Button/Button";
@@ -7,7 +9,10 @@ const inter = Inter({ subsets: ["latin"], weight: "300" });
 
 const About = () => {
   return (
-    <div id="about" className="relative flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-x-12 p-4 lg:py-32">
+    <div
+      id="about"
+      className="relative flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-x-12 p-4 lg:py-32"
+    >
       {/* IMAGE */}
       <div className="flex-1 relative flex justify-center">
         {/* background box */}
@@ -30,18 +35,30 @@ const About = () => {
         </h1>
 
         <p className={`${inter.className}`}>
-          At Icon Esthetics, we combine advanced medical aesthetics with personalized care. 
-          From subtle enhancements to transformative treatments, our certified team focuses on 
-          safe, natural-looking results tailored to your unique goals.
+          Icon Esthetics in Oshawa, Ontario, provides personalized beauty and
+          wellness services designed just for you. Our dedicated team creates a
+          tranquil, luxurious atmosphere that enhances your rejuvenation and
+          confidence. Experience tailored solutions that celebrate your unique
+          beauty aspirations!
         </p>
 
         <div className="flex flex-col mt-2 w-full gap-2">
-          <PrimaryButton label="ABOUT US" variant="secondary" />
-          <PrimaryButton label="OUR SERVICES" variant="outlineDark" />
+          <PrimaryButton
+            label="ABOUT US"
+            variant="secondary"
+            onClick={() => {
+              window.open(
+                "https://www.vagaro.com/iconesthetics1",
+                "_blank",
+                "noopener,noreferrer",
+              );
+            }}
+          />
+          <PrimaryButton label="OUR SERVICES" variant="outlineDark" onClick={() => {window.open("https://www.vagaro.com/iconesthetics1/services", "_blank", "noopener,noreferrer")}} />
         </div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default About; 

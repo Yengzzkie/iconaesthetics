@@ -24,7 +24,9 @@ const FrequentlyAskedQuestions = () => {
             </p>
           </div>
 
-          <PrimaryButton label="GET IN TOUCH" variant="secondary" className="self-start mt-6 w-full lg:w-fit" />
+          <a href="tel:+19055798088" className="w-full lg:w-fit">
+            <PrimaryButton label="CALL US NOW" variant="secondary" className="self-start mt-6 w-full lg:w-fit" />
+          </a>
         </div>
 
         <div>

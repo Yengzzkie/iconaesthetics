@@ -27,7 +27,7 @@ const Pricing = () => {
 
       {/* cards container */}
       <div className={`${oranienbaum.className} grid grid-cols-1 lg:grid-cols-2 gap-8 h-1/2 w-full`}>
-        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden">
+        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden shadow-[6px_6px_4px_0px_rgba(0,0,0,0.25)]">
           <div className="absolute -bottom-5 rotate-12 -left-5 w-75 h-75 bg-[#846e6124] mask-[url('/Facial-Rejuvenation.png')] mask-no-repeat mask-center mask-contain" />
           <h1 className="text-4xl text-center mb-2">Facial Rejuvenation</h1>
           {facialservices.map((facial, index) => (
@@ -39,7 +39,7 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden">
+        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden shadow-[6px_6px_4px_0px_rgba(0,0,0,0.25)]">
           <div className="absolute -bottom-5 rotate-12 -left-5 w-75 h-75 bg-[#846e6124] mask-[url('/Cosmetic-Surgery.png')] mask-no-repeat mask-center mask-contain" />
           <h1 className="text-4xl text-center mb-2">Semi-permanent Tattoo</h1>
           {tattooservices.map((tattoo, index) => (
@@ -51,7 +51,7 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden">
+        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden shadow-[6px_6px_4px_0px_rgba(0,0,0,0.25)]">
           <div className="absolute -bottom-5 rotate-12 -left-5 w-75 h-75 bg-[#846e6124] mask-[url('/waxing.png')] mask-no-repeat mask-center mask-contain" />
           <h1 className="text-4xl text-center mb-2">
             Sugar Hair Removal (Female)
@@ -65,7 +65,7 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden">
+        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden shadow-[6px_6px_4px_0px_rgba(0,0,0,0.25)]">
           <div className="absolute -bottom-5 rotate-12 -left-5 w-75 h-75 bg-[#846e6124] mask-[url('/depilation.png')] mask-no-repeat mask-center mask-contain" />
           <h1 className="text-4xl text-center mb-2">
             Sugar Hair Removal (Male)
@@ -79,7 +79,7 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden">
+        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden shadow-[6px_6px_4px_0px_rgba(0,0,0,0.25)]">
           <div className="absolute -bottom-5 rotate-12 -left-5 w-75 h-75 bg-[#846e6124] mask-[url('/haircut.png')] mask-no-repeat mask-center mask-contain" />
           <h1 className="text-4xl text-center mb-2">Haircut</h1>
           <h1 className="font-extrabold text-xl mt-4">MEN</h1>
@@ -101,14 +101,14 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden">
+        <div className="relative flex flex-col gap-1 border border-(--secondary) w-full p-4 lg:p-8 overflow-hidden shadow-[6px_6px_4px_0px_rgba(0,0,0,0.25)]">
           <div className="absolute -bottom-5 rotate-12 -left-5 w-75 h-75 bg-[#846e6124] mask-[url('/aesthetics.png')] mask-no-repeat mask-center mask-contain" />
           <h1 className="text-4xl text-center mb-2">
             Other Services
           </h1>
           {otherservices.map((otherservices, index) => (
             <div key={index} className="flex items-center font-bold">
-              <p className="max-w-2/3 text-sm lg:text-lg text-sm">{otherservices.name}</p>
+              <p className="max-w-2/3 text-sm lg:text-lg">{otherservices.name}</p>
               <div className="flex-1 border-b-[0.5px] border-gray-400 border-dashed mx-2"></div>
               <span className="whitespace-nowrap text-sm lg:text-lg">${otherservices.price}.00</span>
             </div>

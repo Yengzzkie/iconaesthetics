@@ -22,7 +22,7 @@ const Footer = () => {
             {/* phone */}
             <div className="flex items-center gap-x-1.5 hover:-translate-y-0.5 transition-transform duration-200">
               <FaPhone className="h-3" />
-              <p><a href="tel:+15551234567">+1 (905) 579-8088</a></p>
+              <p><a href="tel:+19055798088">+1 (905) 579-8088</a></p>
             </div>
             {/* email */}
             <div className="flex items-center gap-x-1.5 hover:-translate-y-0.5 transition-transform duration-200">
@@ -40,21 +40,21 @@ const Footer = () => {
           <InputField />
           <div className="flex flex-col gap-y-3 mt-4">
             <div className="flex items-center gap-x-1.5">
-              <p className="font-thin">Get the latest news & updates</p>
+              <p className="font-thin">Get the latest news & updates from our Social Media Channels</p>
             </div>
             <div className="flex items-center gap-x-4">
               {/* FACEBOOK */}
-              <div className="flex items-center gap-x-1.5 bg-[#594A41] p-3 hover:bg-white hover:text-(--secondary) transition-all duration-200">
-                <FaFacebook className="w-4 h-4" />
-              </div>
+              <a href="https://www.facebook.com/profile.php?id=61566849477081" target="_blank" rel="noopener noreferrer">
+                <div className="flex items-center gap-x-1.5 bg-[#594A41] p-3 hover:bg-white hover:text-(--secondary) transition-all duration-200">
+                  <FaFacebook className="w-4 h-4" />
+                </div>
+              </a>
               {/* INSTAGRAM */}
-              <div className="flex items-center gap-x-1.5 bg-[#594A41] p-3 hover:bg-white hover:text-(--secondary) transition-all duration-200">
-                <FaInstagram className="w-4 h-4" />
-              </div>
-              {/* TIKTOK */}
-              <div className="flex items-center gap-x-1.5 bg-[#594A41] p-3 hover:bg-white hover:text-(--secondary) transition-all duration-200">
-                <FaTiktok className="w-4 h-4" />
-              </div>
+              <a href="https://www.instagram.com/esthetics.icon/" target="_blank" rel="noopener noreferrer">
+                <div className="flex items-center gap-x-1.5 bg-[#594A41] p-3 hover:bg-white hover:text-(--secondary) transition-all duration-200">
+                  <FaInstagram className="w-4 h-4" />
+                </div>
+              </a>
             </div>
           </div>
         </div>

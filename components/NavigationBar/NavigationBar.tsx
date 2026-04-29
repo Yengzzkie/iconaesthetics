@@ -1,6 +1,6 @@
 "use client";
 
-import { FaInstagram, FaFacebook, FaTiktok, FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
+import { FaInstagram, FaFacebook, FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 import Logo from "@/components/ui/Logo/Logo";
 
 const NavigationBar = () => {
@@ -34,9 +34,12 @@ const NavigationBar = () => {
           </div>
           {/* social media icons */}
           <div className="flex items-center ml-auto text-[14px] gap-x-8">
-            <FaInstagram className="text-(--secondary) h-6 cursor-pointer" />
-            <FaFacebook className="text-(--secondary) h-6 cursor-pointer" />
-            <FaTiktok className="text-(--secondary) h-6 cursor-pointer" />
+            <a href="https://www.facebook.com/profile.php?id=61566849477081" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="text-(--secondary) h-6 cursor-pointer" />
+            </a>
+            <a href="https://www.instagram.com/esthetics.icon" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-(--secondary) h-6 cursor-pointer" />
+            </a>
           </div>
         </div>
       </div>
@@ -50,9 +53,11 @@ const NavigationBar = () => {
           <button className="text-(--secondary) text-xs lg:text-sm border-[0.5px] border-(--secondary) hover:bg-(--secondary) hover:text-white transition-all duration-200 px-2 lg:px-4 py-1 lg:py-3 cursor-pointer">
             <a href="tel:+19055798088">+1 (905) 579-8088</a>
           </button>
-          <button className="bg-(--secondary) text-xs lg:text-sm text-white border-(--secondary) hover:bg-white hover:text-(--secondary) transition-all duration-200 border px-2 lg:px-4 py-1 lg:py-3 w-full lg:w-fit cursor-pointer">
-            Book Now
-          </button>
+          <a href="https://www.vagaro.com/iconesthetics1/services" target="_blank" rel="noopener noreferrer" className="w-full lg:w-fit">
+            <button className="bg-(--secondary) text-xs lg:text-sm text-white border-(--secondary) hover:bg-white hover:text-(--secondary) transition-all duration-200 border px-2 lg:px-4 py-1 lg:py-3 w-full lg:w-fit cursor-pointer">
+              Book Now
+            </button>
+          </a>
         </div>
       </div>
 
