@@ -32,20 +32,24 @@ const Hero = () => {
           <PrimaryButton className="lg:w-full" label="LEARN MORE" variant="outline" onClick={() => {window.open("https://www.vagaro.com/iconesthetics1", "_blank", "noopener,noreferrer")}} />
         </div>
 
-        <div className="bg-(--primary) text-(--accent) text-xs lg:text-sm w/full lg:w-2/3 mx-auto rounded-md mt-10 shadow-[-10px_10px_4px_rgba(0,0,0,0.25)] p-4">
+        <div className="bg-(--primary) text-(--accent) text-xs lg:text-sm w/full lg:w-2/3 mx-auto rounded-md mt-4 shadow-[-10px_10px_4px_rgba(0,0,0,0.25)] p-4">
           <div className="border border-dashed border-(--secondary) rounded-md p-3">
             <h1 className="text-lg font-semibold text-center">Business Hours</h1>
             <div className="flex justify-between">
-              <span>Mon - Fri</span>
-              <span>9:00 AM - 6:00 PM</span>
+              <span>Mon</span>
+              <span>10:00 AM - 6:00 PM</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Tue - Fri</span>
+              <span>10:00 AM - 8:00 PM</span>
             </div>
             <div className="flex justify-between">
               <span>Saturday</span>
-              <span>10:00 AM - 4:00 PM</span>
+              <span>8:00 AM - 8:00 PM</span>
             </div>
             <div className="flex justify-between">
               <span>Sunday</span>
-              <span>Closed</span>
+              <span>9:00 AM - 6:00 PM</span>
             </div>
           </div>
         </div>
