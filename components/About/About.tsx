@@ -30,11 +30,11 @@ const About = () => {
 
       {/* TEXT */}
       <div className="flex flex-col gap-4 flex-1 px-2 lg:px-16">
-        <h1 className={`${italiana.className} text-4xl`}>
+        <h1 className={`${italiana.className} text-(--secondary) text-4xl`}>
           Why Choose Icon Esthetics
         </h1>
 
-        <p className={`${inter.className}`}>
+        <p className={`${inter.className} text-(--accent)`}>
           Icon Esthetics in Oshawa, Ontario, provides personalized beauty and
           wellness services designed just for you. Our dedicated team creates a
           tranquil, luxurious atmosphere that enhances your rejuvenation and

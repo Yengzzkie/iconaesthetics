@@ -8,8 +8,6 @@ import hairremovalmale from "@/data/hairremovalmale.json";
 import menhaircut from "@/data/menhaircut.json";
 import womenhaircut from "@/data/womenhaircut.json";
 import otherservices from "@/data/otherservices.json";
-import services from "@/data/services.json";
-import PriceCard from "../ui/PriceCard/PriceCard";
 
 const italiana = Italiana({ subsets: ["latin"], weight: "400" });
 const oranienbaum = Oranienbaum({ subsets: ["latin"], weight: "400" });
@@ -17,12 +15,11 @@ const oranienbaum = Oranienbaum({ subsets: ["latin"], weight: "400" });
 const Pricing = () => {
   return (
     <div id="pricing" className="flex flex-col items-center p-2 lg:p-20">
-      <h1 className="text-(--secondary) text-sm tracking-wider mb-2">
+      {/* <h1 className="text-(--secondary) text-sm tracking-wider mb-2">
         OUR PRICING
-      </h1>
-      <div className={`${italiana.className} text-4xl text-center mb-10`}>
-        <h1>Transparent Pricing,</h1>
-        <h1>Premium Results</h1>
+      </h1> */}
+      <div className={`text-(--secondary) text-3xl text-center text-shadow-[-1px_3px_2px_#b8b3b0] mb-10`}>
+        <h1>OUR PRICING</h1>
       </div>
 
       {/* cards container */}

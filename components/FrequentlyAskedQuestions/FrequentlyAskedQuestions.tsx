@@ -10,7 +10,7 @@ const FrequentlyAskedQuestions = () => {
     <div id="faq" className="bg-(--primary) px-8 py-12 lg:px-32 lg:py-0">
       <div className="flex flex-col lg:flex-row items-start lg:p-20 mx-auto">
         <div className="flex flex-col mb-4">
-          <div className={`${italiana.className} text-4xl mb-10`}>
+          <div className={`${italiana.className} text-(--secondary) text-4xl mb-10`}>
             <h1>Have Questions?</h1>
             <h1>We&apos;re Here to Help</h1>
           </div>
