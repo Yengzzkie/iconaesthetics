@@ -21,7 +21,7 @@ export default function PrimaryButton({
     primary: 'bg-white text-(--secondary) border-white hover:bg-transparent hover:text-white',
     secondary: 'bg-(--secondary) text-white border-(--secondary) hover:opacity-90',
     outline: 'border border-white text-white hover:text-(--secondary) hover:bg-white',
-    outlineDark: 'border border-(--secondary) text-(--secondary) hover:bg-white hover:text-white',
+    outlineDark: 'border border-(--secondary) text-(--secondary) hover:bg-(--secondary) hover:text-white',
   };
 
   return (

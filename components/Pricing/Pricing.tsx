@@ -19,7 +19,7 @@ const Pricing = () => {
     <div
       id="pricing"
       className={`flex flex-col items-center overflow-hidden p-8`}
-    > 
+    >
       <section className="relative py-24 w-full">
         <div className="mx-auto relative z-10 flex flex-col items-center text-center">
           <span className="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em] mb-4">
@@ -209,70 +209,27 @@ const Pricing = () => {
           </div>
 
           {/* <!-- Other Services --> */}
-          <div className="col-span-1 md:col-span-2 space-y-12">
+          <div className="col-span-1 md:col-span-2 space-y-6">
             <div className="text-center space-y-4">
-              <h2 className="text-2xl lg:text-4xl text-primary">
+              <h2
+                className={`${libreCaslonText.className} text-2xl lg:text-4xl text-primary`}
+              >
                 Other Services
               </h2>
-              <div className="w-24 h-px bg-primary/30 mx-auto"></div>
+              <div className="w-24 h-px bg-(--primary) mx-auto"></div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-surface-container-highest p-8 rounded-lg flex flex-col items-center text-center">
-                <span className="material-symbols-outlined text-primary mb-4 text-4xl">
-                  visibility
-                </span>
-                <h3 className="font-headline-md text-headline-md mb-2">
-                  classNameic Lashes
-                </h3>
-                <p className="font-body-md text-body-md text-on-surface-variant mb-6">
-                  A natural, elegant enhancement.
-                </p>
-                <span className="text-xs lg:text-base text-primary mt-auto">
-                  $110
-                </span>
-              </div>
-              <div className="bg-surface-container-highest p-8 rounded-lg flex flex-col items-center text-center">
-                <span className="material-symbols-outlined text-primary mb-4 text-4xl">
-                  eye_tracking
-                </span>
-                <h3 className="font-headline-md text-headline-md mb-2">
-                  Hybrid Lashes
-                </h3>
-                <p className="font-body-md text-body-md text-on-surface-variant mb-6">
-                  Textured and multi-dimensional.
-                </p>
-                <span className="text-xs lg:text-base text-primary mt-auto">
-                  $135
-                </span>
-              </div>
-              <div className="bg-surface-container-highest p-8 rounded-lg flex flex-col items-center text-center">
-                <span className="material-symbols-outlined text-primary mb-4 text-4xl">
-                  auto_awesome
-                </span>
-                <h3 className="font-headline-md text-headline-md mb-2">
-                  Keratin Lift
-                </h3>
-                <p className="font-body-md text-body-md text-on-surface-variant mb-6">
-                  Maintenance-free lift and curl.
-                </p>
-                <span className="text-xs lg:text-base text-primary mt-auto">
-                  $85
-                </span>
-              </div>
-              <div className="bg-surface-container-highest p-8 rounded-lg flex flex-col items-center text-center">
-                <span className="material-symbols-outlined text-primary mb-4 text-4xl">
-                  brush
-                </span>
-                <h3 className="font-headline-md text-headline-md mb-2">
-                  Brow Lamination
-                </h3>
-                <p className="font-body-md text-body-md text-on-surface-variant mb-6">
-                  Full, feathered brow aesthetic.
-                </p>
-                <span className="text-xs lg:text-base text-primary mt-auto">
-                  $79
-                </span>
-              </div>
+            <div className="space-y-4">
+              {otherservices.map((service, index) => (
+                <div key={index} className="flex items-end justify-between">
+                  <span className="text-xs lg:text-base text-on-surface">
+                    {service.name}
+                  </span>
+                  <div className="dotted-spacer"></div>
+                  <span className="text-xs lg:text-base text-primary">
+                    ${service.price}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -281,7 +238,9 @@ const Pricing = () => {
       {/* <!-- CTA Section --> */}
       <section className="py-12 lg:py-24 bg-primary text-white relative w-full px-6 mt-4">
         <div className="mx-auto relative z-10 flex flex-col items-center text-center p-4">
-          <h2 className={` ${libreCaslonText.className} text-2xl lg:text-4xl mb-6`}>
+          <h2
+            className={` ${libreCaslonText.className} text-2xl lg:text-4xl mb-6`}
+          >
             Ready to Experience Luxury?
           </h2>
           <p className="text-xs lg:text-base opacity-90 max-w-xl mb-10 leading-relaxed">
@@ -289,12 +248,19 @@ const Pricing = () => {
             a beauty journey tailored specifically for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-white text-primary px-10 py-4 text-xs lg:text-base uppercase tracking-widest hover:bg-secondary-fixed transition-colors">
-              Book an Appointment
-            </button>
-            <button className="border border-white/40 text-white px-10 py-4 text-xs lg:text-base uppercase tracking-widest hover:bg-white/10 transition-colors">
-              Contact Us
-            </button>
+            <a
+              href="https://www.vagaro.com/iconesthetics1/services"
+              target="_blank"
+            >
+              <button className="bg-white text-primary px-10 py-4 text-xs lg:text-base uppercase tracking-widest hover:bg-(--light-bg) transition-colors cursor-pointer">
+                Book an Appointment
+              </button>
+            </a>
+            <a href="tel:+19055798088">
+              <button className="border border-white/40 text-white px-10 py-4 text-xs lg:text-base uppercase tracking-widest hover:bg-white/10 transition-colors cursor-pointer">
+                Contact Us
+              </button>
+            </a>
           </div>
         </div>
         {/* <!-- Decorative Background Element --> */}

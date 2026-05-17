@@ -12,8 +12,11 @@ const ServicesInfo = () => {
   return (
     <div className="bg-(--light-bg) py-16 lg:py-36 px-8 lg:px-24">
       <div className="text-center mb-10 lg:mb-20 mx-auto">
+        <span className="font-label-md text-label-md text-(--gold) uppercase tracking-[0.2em]">
+          MORE INFO
+        </span>
         <h1
-          className={`${libreCaslonText.className} text-3xl lg:text-6xl mb-6 text-on-surface`}
+          className={`${libreCaslonText.className} text-(--secondary) text-3xl lg:text-5xl mb-6 mt-3`}
         >
           Experience Rejuvenation
         </h1>
@@ -24,7 +27,6 @@ const ServicesInfo = () => {
       </div>
       {/* // <!-- Services Grid --> */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-        
         {/* <!-- Hydrafacial Card --> */}
         <article className="service-card bg-surface-container-low border border-(--secondary)/40 p-8 md:p-10 flex flex-col h-full">
           <div className="mb-8">
@@ -92,16 +94,16 @@ const ServicesInfo = () => {
             </section>
           </div>
           <div className="mt-12 pt-8 border-t border-(--secondary)/20">
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between mb-3">
               <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
                 Recommended Frequency
               </span>
-              <span className="font-body-md text-body-md text-primary font-bold">
+              {/* <span className="font-body-md text-body-md text-primary font-bold">
                 Monthly
-              </span>
+              </span> */}
             </div>
-            <button className="w-full border border-(--secondary) text-(primary) py-3 font-label-md text-label-md tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all">
-              More Details
+            <button className="w-full border border-(--secondary) text-(--accent) py-3 font-label-md text-label-md tracking-widest uppercase">
+              Monthly
             </button>
           </div>
         </article>
@@ -170,16 +172,16 @@ const ServicesInfo = () => {
             </section>
           </div>
           <div className="mt-12 pt-8 border-t border-(--secondary)/20">
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between mb-3">
               <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
                 Recommended Frequency
               </span>
-              <span className="font-body-md text-body-md text-primary font-bold">
+              {/* <span className="font-body-md text-body-md text-primary font-bold">
                 2-4 Weeks
-              </span>
+              </span> */}
             </div>
-            <button className="w-full border border-(--secondary) text-primary py-3 font-label-md text-label-md tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all">
-              More Details
+            <button className="w-full border border-(--secondary) text-(--accent) py-3 font-label-md text-label-md tracking-widest uppercase">
+              2-4 Weeks
             </button>
           </div>
         </article>
@@ -248,16 +250,16 @@ const ServicesInfo = () => {
             </section>
           </div>
           <div className="mt-12 pt-8 border-t border-(--secondary)/20">
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between mb-3">
               <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
                 Recommended Frequency
               </span>
-              <span className="font-body-md text-body-md text-primary font-bold">
+              {/* <span className="font-body-md text-body-md text-primary font-bold">
                 4-6 Weeks
-              </span>
+              </span> */}
             </div>
-            <button className="w-full border border-primary text-primary py-3 font-label-md text-label-md tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all">
-              More Details
+            <button className="w-full border border-(--secondary) text-(--accent) py-3 font-label-md text-label-md tracking-widest uppercase">
+              4-6 Weeks
             </button>
           </div>
         </article>

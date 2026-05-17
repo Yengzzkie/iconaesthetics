@@ -42,7 +42,7 @@ const About = () => {
           beauty aspirations!
         </p>
 
-        <div className="flex flex-col mt-2 w-full gap-2">
+        <div className="flex flex-col lg:flex-row mt-2 w-full gap-2">
           <PrimaryButton
             label="ABOUT US"
             variant="secondary"
