@@ -18,19 +18,19 @@ const Pricing = () => {
   return (
     <div
       id="pricing"
-      className={`flex flex-col items-center overflow-hidden`}
+      className={`flex flex-col items-center overflow-hidden p-8`}
     > 
-      <section className="bg- relative py-24 w-full">
+      <section className="relative py-24 w-full">
         <div className="mx-auto relative z-10 flex flex-col items-center text-center">
           <span className="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em] mb-4">
             Investment in Yourself
           </span>
           <h1
-            className={`${libreCaslonText.className} font-display-lg text-display-lg text-on-surface mb-6 max-w-2xl`}
+            className={`${libreCaslonText.className} text-3xl lg:text-5xl text-on-surface mb-6 max-w-2xl`}
           >
             Our Service Menu
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+          <p className="text-xs lg:text-base text-on-surface-variant max-w-xl mx-auto leading-relaxed">
             A curated selection of premium beauty treatments designed to enhance
             your natural radiance. Each session is tailored to your unique skin
             profile and aesthetic goals.
@@ -41,14 +41,15 @@ const Pricing = () => {
           <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-linear-to-tr from-secondary-fixed to-transparent"></div>
         </div>
       </section>
+
       {/* <!-- Pricing Grid --> */}
-      <section className={`p-20 mx-auto`}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20">
+      <section className={`p-2 lg:p-20 mx-auto`}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-14 lg:gap-y-20">
           {/* <!-- Facial Rejuvenation --> */}
           <div className="space-y-4">
             <div className="border-b border-outline-variant pb-4">
               <h2
-                className={`${libreCaslonText.className} font-headline-lg text-headline-lg text-primary`}
+                className={`${libreCaslonText.className} text-2xl lg:text-4xl text-primary`}
               >
                 Facial Rejuvenation
               </h2>
@@ -56,11 +57,11 @@ const Pricing = () => {
             {facialservices.map((service, index) => (
               <div key={index} className="space-y-4">
                 <div className="flex items-end justify-between">
-                  <span className="font-body-lg text-body-lg text-on-surface">
+                  <span className="text-xs lg:text-base text-on-surface">
                     {service.name}
                   </span>
                   <div className="dotted-spacer"></div>
-                  <span className="font-label-md text-label-md text-primary">
+                  <span className="text-xs lg:text-base text-primary">
                     ${service.price}
                   </span>
                 </div>
@@ -72,7 +73,7 @@ const Pricing = () => {
           <div className="space-y-8">
             <div className="border-b border-outline-variant pb-4">
               <h2
-                className={`${libreCaslonText.className} font-headline-lg text-headline-lg text-primary`}
+                className={`${libreCaslonText.className} text-2xl lg:text-4xl text-primary`}
               >
                 Semi-Permanent Tattoo
               </h2>
@@ -80,21 +81,21 @@ const Pricing = () => {
             <div className="space-y-4">
               {tattooservices.map((service, index) => (
                 <div key={index} className="flex items-end justify-between">
-                  <span className="font-body-lg text-body-lg text-on-surface">
+                  <span className="text-xs lg:text-base text-on-surface">
                     {service.name}
                   </span>
                   <div className="dotted-spacer"></div>
-                  <span className="font-label-md text-label-md text-primary">
+                  <span className="text-xs lg:text-base text-primary">
                     ${service.price}
                   </span>
                 </div>
               ))}
             </div>
-            <div className="bg-(--secondary)/20 p-8 rounded-lg border border-secondary/10 mt-8">
+            <div className="bg-(--secondary)/20 p-4 lg:p-8 rounded-lg border border-(--secondary)/40 mt-8">
               <p className="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-2 italic">
                 Note:
               </p>
-              <p className="font-body-md text-body-md text-on-surface-variant">
+              <p className="text-xs lg:text-base text-on-surface-variant">
                 All tattoo services include a complimentary consultation and
                 personalized color matching to ensure the most natural, high-end
                 results.
@@ -106,7 +107,7 @@ const Pricing = () => {
           <div className="space-y-8">
             <div className="border-b border-outline-variant pb-4 flex justify-between items-baseline">
               <h2
-                className={`${libreCaslonText.className} font-headline-lg text-headline-lg text-primary`}
+                className={`${libreCaslonText.className} text-2xl lg:text-4xl text-primary`}
               >
                 Sugar Hair Removal
               </h2>
@@ -117,11 +118,11 @@ const Pricing = () => {
             <div className="space-y-4">
               {hairremovalservices.map((service, index) => (
                 <div key={index} className="flex items-end justify-between">
-                  <span className="font-body-lg text-body-lg text-on-surface">
+                  <span className="text-xs lg:text-base text-on-surface">
                     {service.name}
                   </span>
                   <div className="dotted-spacer"></div>
-                  <span className="font-label-md text-label-md text-primary">
+                  <span className="text-xs lg:text-base text-primary">
                     ${service.price}
                   </span>
                 </div>
@@ -133,7 +134,7 @@ const Pricing = () => {
           <div className="space-y-8">
             <div className="border-b border-outline-variant pb-4 flex justify-between items-baseline">
               <h2
-                className={`${libreCaslonText.className} font-headline-lg text-headline-lg text-primary`}
+                className={`${libreCaslonText.className} text-2xl lg:text-4xl text-primary`}
               >
                 Sugar Hair Removal
               </h2>
@@ -144,11 +145,11 @@ const Pricing = () => {
             <div className="space-y-4">
               {hairremovalmale.map((service, index) => (
                 <div key={index} className="flex items-end justify-between">
-                  <span className="font-body-lg text-body-lg text-on-surface">
+                  <span className="text-xs lg:text-base text-on-surface">
                     {service.name}
                   </span>
                   <div className="dotted-spacer"></div>
-                  <span className="font-label-md text-label-md text-primary">
+                  <span className="text-xs lg:text-base text-primary">
                     ${service.price}
                   </span>
                 </div>
@@ -162,7 +163,7 @@ const Pricing = () => {
               <div className="space-y-8">
                 <div className="border-b border-outline-variant pb-4">
                   <h2
-                    className={`${libreCaslonText.className} font-headline-lg text-headline-lg text-primary`}
+                    className={`${libreCaslonText.className} text-2xl lg:text-4xl text-primary`}
                   >
                     Women&apos;s Haircut and Styling
                   </h2>
@@ -170,11 +171,11 @@ const Pricing = () => {
                 <div className="space-y-4">
                   {womenhaircut.map((service, index) => (
                     <div key={index} className="flex items-end justify-between">
-                      <span className="font-body-lg text-body-lg text-on-surface">
+                      <span className="text-xs lg:text-base text-on-surface">
                         {service.name}
                       </span>
                       <div className="dotted-spacer"></div>
-                      <span className="font-label-md text-label-md text-primary">
+                      <span className="text-xs lg:text-base text-primary">
                         ${service.price}
                       </span>
                     </div>
@@ -185,7 +186,7 @@ const Pricing = () => {
               <div className="space-y-8">
                 <div className="border-b border-outline-variant pb-4">
                   <h2
-                    className={`${libreCaslonText.className} font-headline-lg text-headline-lg text-primary`}
+                    className={`${libreCaslonText.className} text-2xl lg:text-4xl text-primary`}
                   >
                     Men&apos;s Haircut
                   </h2>
@@ -193,11 +194,11 @@ const Pricing = () => {
                 <div className="space-y-4">
                   {menhaircut.map((service, index) => (
                     <div key={index} className="flex items-end justify-between">
-                      <span className="font-body-lg text-body-lg text-on-surface">
+                      <span className="text-xs lg:text-base text-on-surface">
                         {service.name}
                       </span>
                       <div className="dotted-spacer"></div>
-                      <span className="font-label-md text-label-md text-primary">
+                      <span className="text-xs lg:text-base text-primary">
                         ${service.price}
                       </span>
                     </div>
@@ -210,7 +211,7 @@ const Pricing = () => {
           {/* <!-- Other Services --> */}
           <div className="col-span-1 md:col-span-2 space-y-12">
             <div className="text-center space-y-4">
-              <h2 className="font-headline-lg text-headline-lg text-primary">
+              <h2 className="text-2xl lg:text-4xl text-primary">
                 Other Services
               </h2>
               <div className="w-24 h-px bg-primary/30 mx-auto"></div>
@@ -226,7 +227,7 @@ const Pricing = () => {
                 <p className="font-body-md text-body-md text-on-surface-variant mb-6">
                   A natural, elegant enhancement.
                 </p>
-                <span className="font-label-md text-label-md text-primary mt-auto">
+                <span className="text-xs lg:text-base text-primary mt-auto">
                   $110
                 </span>
               </div>
@@ -240,7 +241,7 @@ const Pricing = () => {
                 <p className="font-body-md text-body-md text-on-surface-variant mb-6">
                   Textured and multi-dimensional.
                 </p>
-                <span className="font-label-md text-label-md text-primary mt-auto">
+                <span className="text-xs lg:text-base text-primary mt-auto">
                   $135
                 </span>
               </div>
@@ -254,7 +255,7 @@ const Pricing = () => {
                 <p className="font-body-md text-body-md text-on-surface-variant mb-6">
                   Maintenance-free lift and curl.
                 </p>
-                <span className="font-label-md text-label-md text-primary mt-auto">
+                <span className="text-xs lg:text-base text-primary mt-auto">
                   $85
                 </span>
               </div>
@@ -268,7 +269,7 @@ const Pricing = () => {
                 <p className="font-body-md text-body-md text-on-surface-variant mb-6">
                   Full, feathered brow aesthetic.
                 </p>
-                <span className="font-label-md text-label-md text-primary mt-auto">
+                <span className="text-xs lg:text-base text-primary mt-auto">
                   $79
                 </span>
               </div>
@@ -276,21 +277,22 @@ const Pricing = () => {
           </div>
         </div>
       </section>
+
       {/* <!-- CTA Section --> */}
-      <section className="py-24 bg-primary text-white relative w-full">
-        <div className="mx-auto relative z-10 flex flex-col items-center text-center">
-          <h2 className="font-display-lg text-display-lg mb-6">
+      <section className="py-12 lg:py-24 bg-primary text-white relative w-full px-6 mt-4">
+        <div className="mx-auto relative z-10 flex flex-col items-center text-center p-4">
+          <h2 className={` ${libreCaslonText.className} text-2xl lg:text-4xl mb-6`}>
             Ready to Experience Luxury?
           </h2>
-          <p className="font-body-lg text-body-lg opacity-90 max-w-xl mb-10 leading-relaxed">
+          <p className="text-xs lg:text-base opacity-90 max-w-xl mb-10 leading-relaxed">
             Book your personalized consultation today and let our experts craft
             a beauty journey tailored specifically for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-white text-primary px-10 py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-secondary-fixed transition-colors">
+            <button className="bg-white text-primary px-10 py-4 text-xs lg:text-base uppercase tracking-widest hover:bg-secondary-fixed transition-colors">
               Book an Appointment
             </button>
-            <button className="border border-white/40 text-white px-10 py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-white/10 transition-colors">
+            <button className="border border-white/40 text-white px-10 py-4 text-xs lg:text-base uppercase tracking-widest hover:bg-white/10 transition-colors">
               Contact Us
             </button>
           </div>

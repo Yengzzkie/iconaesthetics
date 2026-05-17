@@ -10,14 +10,14 @@ const libreCaslonText = Libre_Caslon_Text({
 
 const ServicesInfo = () => {
   return (
-    <div className="bg-(--light-bg) py-36 px-24">
-      <div className="text-center mb-20 max-w-3xl mx-auto">
+    <div className="bg-(--light-bg) py-16 lg:py-36 px-8 lg:px-24">
+      <div className="text-center mb-10 lg:mb-20 mx-auto">
         <h1
-          className={`${libreCaslonText.className} text-6xl mb-6 text-on-surface`}
+          className={`${libreCaslonText.className} text-3xl lg:text-6xl mb-6 text-on-surface`}
         >
           Experience Rejuvenation
         </h1>
-        <p className="font-body-lg text-body-lg text-on-surface-variant">
+        <p className="text-xs lg:text-base text-on-surface-variant">
           Explore our signature treatments designed to reveal your natural
           radiance through advanced techniques and personalized care.
         </p>
@@ -44,11 +44,11 @@ const ServicesInfo = () => {
                 <span className="material-symbols-outlined text-primary">
                   <FaCheckCircle />
                 </span>
-                <h3 className="font-label-md text-label-md text-on-surface uppercase tracking-wider">
+                <h3 className="text-xs font-label-md text-label-md text-on-surface uppercase tracking-wider">
                   Effective For:
                 </h3>
               </div>
-              <ul className="space-y-3 pl-9">
+              <ul className="space-y-1.5 lg:space-y-1.5 lg:space-y-3 pl-9">
                 <li className="font-body-md text-body-md text-on-surface-variant flex justify-between">
                   Fine lines &amp; wrinkles
                 </li>
@@ -75,7 +75,7 @@ const ServicesInfo = () => {
                   Treatment Includes:
                 </h3>
               </div>
-              <ul className="space-y-3 pl-9 list-disc marker:text-secondary">
+              <ul className="space-y-1.5 lg:space-y-1.5 lg:space-y-3 pl-9 list-disc marker:text-secondary">
                 <li className="font-body-md text-body-md text-on-surface-variant">
                   Vortex-cleansing
                 </li>
@@ -129,7 +129,7 @@ const ServicesInfo = () => {
                   Effective For:
                 </h3>
               </div>
-              <ul className="space-y-3 pl-9">
+              <ul className="space-y-1.5 lg:space-y-3 pl-9">
                 <li className="font-body-md text-body-md text-on-surface-variant">
                   Dull complexion
                 </li>
@@ -153,7 +153,7 @@ const ServicesInfo = () => {
                   Treatment Includes:
                 </h3>
               </div>
-              <ul className="space-y-3 pl-9 list-disc marker:text-secondary">
+              <ul className="space-y-1.5 lg:space-y-3 pl-9 list-disc marker:text-secondary">
                 <li className="font-body-md text-body-md text-on-surface-variant">
                   Diamond-tip exfoliation
                 </li>
@@ -195,7 +195,7 @@ const ServicesInfo = () => {
             >
               Sugaring
             </h2>
-            <div className="h-px bg-secondary/20 w-full mb-6"></div>
+            <div className="h-px bg-(--secondary)/20 w-full mb-6"></div>
           </div>
           <div className="space-y-10 grow">
             <section>
@@ -207,7 +207,7 @@ const ServicesInfo = () => {
                   Effective For:
                 </h3>
               </div>
-              <ul className="space-y-3 pl-9">
+              <ul className="space-y-1.5 lg:space-y-3 pl-9">
                 <li className="font-body-md text-body-md text-on-surface-variant">
                   Gentle hair removal
                 </li>
@@ -231,7 +231,7 @@ const ServicesInfo = () => {
                   Treatment Includes:
                 </h3>
               </div>
-              <ul className="space-y-3 pl-9 list-disc marker:text-secondary">
+              <ul className="space-y-1.5 lg:space-y-3 pl-9 list-disc marker:text-secondary">
                 <li className="font-body-md text-body-md text-on-surface-variant">
                   Natural sugar paste application
                 </li>
@@ -264,7 +264,7 @@ const ServicesInfo = () => {
       </div>
 
       {/* // <!-- Featured Section with Asymmetric Layout --> */}
-      <section className="mt-32 grid md:grid-cols-2 gap-16 items-center">
+      <section className="mt-18 lg:mt-32 grid md:grid-cols-2 gap-16 items-center">
         <div className="order-2 md:order-1">
           <div className="aspect-[4/5] bg-surface-container-highest relative">
             <img
@@ -288,11 +288,11 @@ const ServicesInfo = () => {
             The Experience
           </span>
           <h2
-            className={`${libreCaslonText.className} text-(--secondary) text-4xl mb-8`}
+            className={`${libreCaslonText.className} text-(--secondary) text-2xl lg:text-4xl mb-4 lg:mb-8`}
           >
             Why Choose Professional Aesthetics?
           </h2>
-          <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+          <p className="text-xs lg:text-base text-on-surface-variant mb-8 leading-relaxed">
             Our treatments go beyond surface-level beauty. By combining
             medical-grade technology with a deep understanding of skin biology,
             we deliver results that are both immediate and long-lasting. Every
@@ -308,7 +308,7 @@ const ServicesInfo = () => {
                 <h4 className="font-bold text-(--accent) uppercase mb-1">
                   Certified Specialists
                 </h4>
-                <p className="font-body-md text-body-md text-on-surface-variant">
+                <p className="text-xs lg:text-base text-on-surface-variant">
                   Our team consists of highly trained experts committed to your
                   safety and satisfaction.
                 </p>
@@ -322,7 +322,7 @@ const ServicesInfo = () => {
                 <h4 className="font-bold text-(--accent) uppercase mb-1">
                   Premium Products
                 </h4>
-                <p className="font-body-md text-body-md text-on-surface-variant">
+                <p className="text-xs lg:text-base text-on-surface-variant">
                   We exclusively use medical-grade skincare lines to achieve
                   superior therapeutic results.
                 </p>

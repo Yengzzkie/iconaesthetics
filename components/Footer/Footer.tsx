@@ -62,7 +62,7 @@ const Footer = () => {
 
       {/* CREDITS */}
       <div className="flex flex-col lg:flex-row text-center gap-1 justify-between py-4 border-t border-[#d7d7d771] mt-4 font-thin text-sm">
-        <p>SEO and design by <a className="font-bold" href="https://manuel-gatchalian.com/" target="_blank">Manuel Gatchalian</a></p>
+        <p>SEO and design by <a className="font-bold" href="https://www.facebook.com/yengzzkie/" target="_blank">Manuel Gatchalian</a></p>
         <p>Copyright © {new Date().getFullYear()} All rights reserved.</p>
       </div>
     </div>
