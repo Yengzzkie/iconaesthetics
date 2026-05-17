@@ -1,80 +1,95 @@
-import Image from "next/image";
-import { Italiana } from "next/font/google";
+import { Libre_Caslon_Text } from "next/font/google";
+import servicesHighlight from "@/data/services-highlight/services-highlight.json";
+import { MdOutlineArrowForward } from "react-icons/md";
 
-const italiana = Italiana({ subsets: ["latin"], weight: "400" });
+const libreCaslonText = Libre_Caslon_Text({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 const ServicesOffered = () => {
   return (
-    <div id="services" className="h-auto w-full">
-      <div className="bg-(--secondary) flex flex-col items-center text-white m-auto py-12 lg:py-32">
-        <div className="text-center w-full lg:w-1/2 px-2">
-          <h1 className={`${italiana.className} text-shadow-[-3px_3px_7px_#111111] text-4xl mb-4`}>
-            Our Specialties
+    <div id="services" className="bg-(--secondary)  h-auto w-full p-20">
+      <section className="w-full py-24">
+        <div className="inset-0 bg-linear-to-b from-background/80 to-background flex flex-col items-center justify-end">
+          <span
+            className={`${libreCaslonText.className} text-(--gold) uppercase tracking-[0.2em]`}
+          >
+            Elevated Wellness
+          </span>
+          <h1
+            className={`${libreCaslonText.className} text-(--primary) text-6xl text-shadow text-center px-4`}
+          >
+            Artistry in Every Detail
           </h1>
-          <p className="text-(--primary) text-center font-thin">
-            We offer a range of beauty and aesthetic treatments designed to
-            enhance your natural features with precision and care.
+        </div>
+      </section>
+      {/* // <!-- Redesigned Services Section --> */}
+      <section className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-20">
+          <h2
+            className={`libreCaslonText ${libreCaslonText.className} text-(--gold) text-4xl mb-6`}
+          >
+            Our Specialized Services
+          </h2>
+          <p className="text-(--primary)">
+            Experience a curated selection of premium beauty treatments designed
+            to revitalize your natural essence through expert mastery and serene
+            surroundings.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:w-3/4 mx-auto mt-8 px-4 lg:px-0">
-
+        {/* <!-- Service Grid --> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Skin Care Treatments */}
-          <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] lg:border-r border-b py-2 lg:py-0">
-            <Image src="/facial-massage-removebg-preview.png" alt="facial-massage" width={100} height={100} className="invert" />
-            <h1 className="mt-4 text-shadow-[-1px_2px_5px_#b8b3b0]">SKIN CARE TREATMENTS</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
-              Maintain healthy, radiant skin with professional facials and targeted skin care solutions.
-            </p>
-          </div>
+          {servicesHighlight.map((service) => (
+            <div key={service.id} className="service-card group cursor-pointer h-full flex flex-col">
+              <div className="relative aspect-square overflow-hidden mb-6">
+                <img
+                  className="service-image w-full h-full object-cover transition-transform duration-700 ease-out"
+                  src={service.image}
+                  alt={service.name}
+                />
+                <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-300"></div>
+              </div>
 
-          {/* Facial Rejuvenation */}
-          <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] lg:border-r border-b py-6 lg:py-0">
-            <Image src="/Facial-Fillers.png" alt="facial-massage" width={100} height={100} />
-            <h1 className="mt-4 text-shadow-[-1px_2px_5px_#b8b3b0]">FACIAL REJUVENATION</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
-              Revitalize your skin with customized treatments that improve tone, texture, and overall glow.
-            </p>
-          </div>
+              <div className="flex flex-col gap-2 flex-1">
+                <h3 className="text-3xl text-(--primary) text-shadow">
+                  {service.name}
+                </h3>
 
-          {/* Haircut & Styling */}
-          <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] border-b py-6 lg:py-0">
-            <Image src="/haircut.png" alt="haircut" width={100} height={100} className="invert" />
-            <h1 className="mt-4 text-shadow-[-1px_2px_5px_#b8b3b0]">HAIRCUT & STYLING</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
-              Get a fresh, modern look with professional cuts and styling suited to your face shape and lifestyle.
-            </p>
-          </div>
+                <p className="text-(--primary)/80 line-clamp-3 flex-1">
+                  {service.description}
+                </p>
 
-          {/* Sugaring Hair Removal */}
-          <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] lg:border-r py-6 lg:py-0">
-            <Image src="/waxing.png" alt="waxing" width={100} height={100} className="invert" />
-            <h1 className="mt-4 text-shadow-[-1px_2px_5px_#b8b3b0]">SUGARING HAIR REMOVAL</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
-              A gentle, natural hair removal method that leaves your skin smooth with less irritation than waxing.
-            </p>
-          </div>
-
-          {/* Brow Tattoo / Microblading */}
-          <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] border-t lg:border-t-0 lg:border-r py-6 lg:py-0">
-            <Image src="/eyebrows.png" alt="eyebrow" width={100} height={100} className="invert" />
-            <h1 className="mt-4 text-shadow-[-1px_2px_5px_#b8b3b0]">BROW TATTOO</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
-              Achieve fuller, perfectly shaped brows with semi-permanent techniques like microblading.
-            </p>
-          </div>
-
-          {/* Eyelash Extensions */}
-          <div className="lg:aspect-square flex flex-col items-center justify-center gap-2 border-[#FFFFFF33] border-t lg:border-t-0 py-6 lg:py-0">
-            <Image src="/eyelash.png" alt="eyelashe" width={100} height={100} className="invert" />
-            <h1 className="mt-4 text-shadow-[-1px_2px_5px_#b8b3b0]">EYELASH EXTENSIONS</h1>
-            <p className="text-sm font-thin text-[#FFFFFFCC] text-center max-w-3/4">
-              Enhance your eyes with fuller, longer lashes tailored to your desired look—from natural to dramatic.
-            </p>
-          </div>
-
+                <a className="mt-4 flex items-center gap-2 text-(--gold) uppercase tracking-[0.2em] text-sm group/link" href="#">
+                  Learn More
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover/link:translate-x-1 text-[18px]">
+                    <MdOutlineArrowForward />
+                  </span>
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
+
+        <div className="bg-(--light-bg) flex justify-between items-center w-full py-14 px-20 mt-24">
+          <div>
+            <h3
+              className={`${libreCaslonText.className} text-3xl text-(--secondary) mb-2`}
+            >
+              Ready for your transformation?
+            </h3>
+            <p className="text-(--secondary)/80">
+              Consult with our master estheticians to create your personalized
+              beauty journey today.
+            </p>
+          </div>
+          <button className="bg-(--secondary) text-(--primary) px-10 py-4 uppercase tracking-[0.2em] hover:bg-(--secondary)/90 transition-all cursor-pointer">
+            Secure Appointment
+          </button>
+        </div>
+      </section>
     </div>
   );
 };

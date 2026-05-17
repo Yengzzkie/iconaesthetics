@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Skin Care Treatments",
+    "description": "Bespoke dermatological solutions tailored to your unique skin profile for lasting health and vitality.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1xG7GBwfo6xJWfUajvw8nOu487L2izg49u3vY_iQDnIzmheagkPhAA7MYgPUdLo8h2qAsuTrHVFOlc6A2d7V4ThThRZ3qKxBIi3ks4kglr2tjQerhS4TKWp36Y9O74TVCqsPgC8j68fM0Jv9PJuwWa6n1rywbA61FehvPvHm2bekbvldzMZHyfOXoXoQW9VHQCq7yLwoTIsPR8G1a5TlHiJvf1fbZ5I1eTpKlE-JxNzcooDCxiILNpZ35WVKz9sPh2m46BCUGuIWn"
+  },
+  {
+    "id": 2,
+    "name": "Facial Rejuvenation",
+    "description": "Advanced non-invasive techniques to restore volume, smooth textures, and reveal a youthful luminosity.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDBoIOqpmtbZMfKEoQBatm6GE_QptqDqxWqSaEfTApNS6Tm3wqZ2cPZmJj6Hq57TLf0i9a3OJilVhCFnvZyqaWLcw3U9mIGlD1CLyBAMxRZ-UV5LNZZQijGiX42rY--B-C4YFRyYWJEoWCZI4cHZJzJybuHYXZV84TsYlr8F2ofcyYl4MJh_u1KNxyGNhtLq0WqkD8UYZ61uhywTTvszRuIKjW5eApAoLRMSq9NOTpMN6S8OqMWZ0awIm4hwUkPhxw4KW_1Y4tPkMoN"
+  },
+  {
+    "id": 3,
+    "name": "Haircut and Styling",
+    "description": "Precision cutting and artistic styling that complements your features and personal aesthetic.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCIKp2N5gqh4WufZU6gGNz3pmaTRpOGpOEcpNQgG4kPX_zMN5NlO-QRH-6EA5eOi5RCtjxGkgb9lmhsUJyLrWRnMMNR4jEpEa_SG1f4_H3rxC1TYP-70E9djGyHkr2FQA167yaEgChGHpYnX35nfS-36PAxwxKD4Tom9uNYr3pSdSOc0N5BXM4auVU0ruCE_uEuAmTczILVaAS-RPVgnXvC6zZ5eBasTxOjASSZabNySKdwJ69X57dFJ8he0m0p0XZHZddsvhpp9i3t"
+  },
+  {
+    "id": 4,
+    "name": "Sugaring Hair Removal",
+    "description": "An ancient, all-natural technique for gentle hair removal, leaving skin exceptionally smooth and soft.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZ5pIzKUHeLoGb5ttWJxOwZ_56b7OOD5kT5vm3L-GthcuD8xf3ePK8u9PZ58Auxe1Dhf3xa9Ntix1pUQFaqGdjDCuwTO3mhKwPMRmeeqQPrXG2adEBZAXCX0kd43WpHRnZwJYkA935rQPXo_PqCuuZnxIi6g3IkwdXq-rl2MtoK2Cen_IGONvY6Y8rY4F3vYkzLWSYWjcZjqkMvTw4auvTOIxq_NS890LDjDScHuSwpmMDXRJ9EXpyLQsPcWPJGypF9fo6xCyJUd77"
+  },
+  {
+    "id": 5,
+    "name": "Brow Tattoo",
+    "description": "Expert semi-permanent artistry to define, fill, and perfect your brows with natural-looking results.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuChjMrGlpT6_xFr-vqmP0dtqmZwRpwLGnqzPmEelbb4_CedS_FIKVNuVk_vwJxKNVvllPQEByclpK9Q-cgbHeGLINdcjOzt_3flKD0ML1ny-yfv3p4P1qbVqRDZw38lUFcG2YPr7hKN2rWmLJkAiFKxSvsxnztFDNHPdX_Bw5eOScP1AsA9HyfUpy2vml5-4kBFYwAneJzvEPSXzt-6MCuGDHT4Y6pfi5Z95bZBylozJFg-0oIeFosWWhDw2d_oH9M7kMRcteqppDKK"
+  },
+  {
+    "id": 6,
+    "name": "Eyelash Extensions",
+    "description": "Enhance your gaze with premium, lightweight extensions applied lash-by-lash for a flawless finish.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDwn84-CE8Ap7hrTKzm3q0P9l_kUwVBjhr67hvg5JlfcS3c07oJB5gtbMsuwBA_KGEcPuDPsSnqOCbW0mEgdBbkN6xKn9eEFEs-YeSA4mXw1HUKz8tgbPRcv-gTiW-HdSGaomrp23OsJXSoJ4Xg-IJLiNEgnS8Dl7KkOtmKijv62Xywh8B6CnFausfAWyFOFcVTkJexKwUNEDOBM1RUgRykzUlET810gB1S8ex5-7ViRdd1E45Ho5QnPKW_t5toZLMFvPoDB7aCcANB"
+  }
+]

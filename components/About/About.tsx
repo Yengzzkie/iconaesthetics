@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-x-12 p-4 lg:py-32"
+      className="relative bg-surface-container-low flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-x-12 p-4 lg:py-32"
     >
       {/* IMAGE */}
       <div className="flex-1 relative flex justify-center">
