@@ -26,7 +26,7 @@ const Pricing = () => {
             Investment in Yourself
           </span>
           <h1
-            className={`${libreCaslonText.className} text-3xl lg:text-5xl text-on-surface mb-6 max-w-2xl`}
+            className={`${libreCaslonText.className} text-(--secondary) text-3xl lg:text-5xl mb-6 max-w-2xl`}
           >
             Our Service Menu
           </h1>

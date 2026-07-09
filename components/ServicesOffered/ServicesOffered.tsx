@@ -82,9 +82,11 @@ const ServicesOffered = () => {
               beauty journey today.
             </p>
           </div>
-          <button className="bg-(--secondary) text-(--primary) text-xs lg:text-base px-5 lg:px-10 py-4 uppercase tracking-[0.2em] hover:bg-(--secondary)/90 transition-all w-full lg:w-fit cursor-pointer">
-            Secure Appointment
-          </button>
+          <a href="https://www.vagaro.com/iconesthetics1/services" target="_blank">
+            <button className="bg-(--secondary) text-(--primary) text-xs lg:text-base px-5 lg:px-10 py-4 uppercase tracking-[0.2em] hover:bg-(--secondary)/90 transition-all w-full lg:w-fit cursor-pointer">
+              Secure Appointment
+            </button>
+          </a>
         </div>
       </section>
     </div>
