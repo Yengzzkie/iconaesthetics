@@ -2,6 +2,7 @@ import { Libre_Caslon_Text } from "next/font/google";
 import { FaCheckCircle, FaSpa } from "react-icons/fa";
 import { MdMedicalServices, MdEco, MdInventory2 } from "react-icons/md";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
+import { BiPlusMedical } from "react-icons/bi";
 
 const libreCaslonText = Libre_Caslon_Text({
   subsets: ["latin"],
@@ -52,19 +53,22 @@ const ServicesInfo = () => {
               </div>
               <ul className="space-y-1.5 lg:space-y-1.5 lg:space-y-3 pl-9">
                 <li className="font-body-md text-body-md text-on-surface-variant flex justify-between">
-                  Fine lines &amp; wrinkles
+                  Dull, dehydrated skin
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Elasticity &amp; firmness
+                  Congested pores & blackheads
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Even tone &amp; vibrancy
+                  Fine lines & early signs of aging
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Skin texture
+                  Uneven skin tone & texture
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Oily/congested skin
+                  Oily and acne-prone skin
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Loss of radiance and elasticity
                 </li>
               </ul>
             </section>
@@ -92,18 +96,42 @@ const ServicesInfo = () => {
                 </li>
               </ul>
             </section>
+            <section>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="material-symbols-outlined text-primary">
+                  <BiPlusMedical />
+                </span>
+                <h3 className="font-label-md text-label-md text-on-surface uppercase tracking-wider">
+                  BENEFITS:
+                </h3>
+              </div>
+              <ul className="space-y-1.5 lg:space-y-1.5 lg:space-y-3 pl-9 list-disc marker:text-secondary">
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Brighter, smoother complexion
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Clearer, refined pores
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Improved hydration levels
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Enhanced skin radiance
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Healthier-looking skin with no downtime
+                </li>
+              </ul>
+            </section>
           </div>
           <div className="mt-12 pt-8 border-t border-(--secondary)/20">
             <div className="flex items-center justify-between mb-3">
               <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
                 Recommended Frequency
               </span>
-              {/* <span className="font-body-md text-body-md text-primary font-bold">
-                Monthly
-              </span> */}
             </div>
             <button className="w-full border border-(--secondary) text-(--accent) py-3 font-label-md text-label-md tracking-widest uppercase">
-              Monthly
+              4-6 WEEKS
             </button>
           </div>
         </article>
@@ -133,16 +161,22 @@ const ServicesInfo = () => {
               </div>
               <ul className="space-y-1.5 lg:space-y-3 pl-9">
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Dull complexion
+                  Dull and tired-looking skin
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Uneven skin tone/texture
+                  Uneven texture and tone
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Age spots &amp; Dark spots
+                  Sun spots and pigmentation concerns
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Melasma reduction
+                  Early signs of aging
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Mild acne scarring
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Maintaining a smooth, radiant complexion
                 </li>
               </ul>
             </section>
@@ -157,16 +191,22 @@ const ServicesInfo = () => {
               </div>
               <ul className="space-y-1.5 lg:space-y-3 pl-9 list-disc marker:text-secondary">
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Diamond-tip exfoliation
+                  Precision Diamond Resurfacing
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Vacuum suction
+                  Advanced Exfoliation
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Dead skin removal
+                  Pore-Refining Vacuum Technology
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Soothing finishing mask
+                  Cellular Renewal Stimulation
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Calming Hydration Treatment
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Protective Finishing Products
                 </li>
               </ul>
             </section>
@@ -176,9 +216,6 @@ const ServicesInfo = () => {
               <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
                 Recommended Frequency
               </span>
-              {/* <span className="font-body-md text-body-md text-primary font-bold">
-                2-4 Weeks
-              </span> */}
             </div>
             <button className="w-full border border-(--secondary) text-(--accent) py-3 font-label-md text-label-md tracking-widest uppercase">
               2-4 Weeks
@@ -214,13 +251,19 @@ const ServicesInfo = () => {
                   Gentle hair removal
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  All skin types/Sensitive skin
+                  Unwanted facial and body hair
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Reducing ingrown hairs
+                  Frequent ingrown hairs
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Smooth, exfoliated skin
+                  Skin prone to irritation
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Maintaining smooth, healthy skin
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Gentle exfoliation and renewal
                 </li>
               </ul>
             </section>
@@ -235,16 +278,22 @@ const ServicesInfo = () => {
               </div>
               <ul className="space-y-1.5 lg:space-y-3 pl-9 list-disc marker:text-secondary">
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Natural sugar paste application
+                  Professional Sugar Paste Application
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Directional hair removal
+                  Precision Hair Removal
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Soothing after-care
+                  Natural Skin Exfoliation
                 </li>
                 <li className="font-body-md text-body-md text-on-surface-variant">
-                  Post-treatment hydration
+                  Directional Extraction Technique
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Calming Post-Care Treatment
+                </li>
+                <li className="font-body-md text-body-md text-on-surface-variant">
+                  Hydration & Skin Protection
                 </li>
               </ul>
             </section>
@@ -254,9 +303,6 @@ const ServicesInfo = () => {
               <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
                 Recommended Frequency
               </span>
-              {/* <span className="font-body-md text-body-md text-primary font-bold">
-                4-6 Weeks
-              </span> */}
             </div>
             <button className="w-full border border-(--secondary) text-(--accent) py-3 font-label-md text-label-md tracking-widest uppercase">
               4-6 Weeks
