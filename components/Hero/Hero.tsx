@@ -37,19 +37,15 @@ const Hero = () => {
             <h1 className="text-lg font-semibold text-center">Business Hours</h1>
             <div className="flex justify-between">
               <span>Mon</span>
-              <span>10:00 AM - 6:00 PM</span>
+              <span>10:00 AM - 7:00 PM</span>
             </div>
             <div className="flex justify-between">
-              <span>Tue - Fri</span>
+              <span>Tue - Sat</span>
               <span>10:00 AM - 8:00 PM</span>
             </div>
             <div className="flex justify-between">
-              <span>Saturday</span>
-              <span>8:00 AM - 8:00 PM</span>
-            </div>
-            <div className="flex justify-between">
               <span>Sunday</span>
-              <span>9:00 AM - 6:00 PM</span>
+              <span>8:00 AM - 7:00 PM</span>
             </div>
           </div>
         </div>
